@@ -1,16 +1,16 @@
 # Graph Report - hw4  (2026-06-19)
 
 ## Corpus Check
-- 863 files · ~179,373 words
+- 873 files · ~181,052 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1809 nodes · 1049 edges · 840 communities (19 shown, 821 thin omitted)
+- 1839 nodes · 1083 edges · 844 communities (22 shown, 822 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.6)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `2518d9ef`
+- Built from commit: `f02d0820`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -850,6 +850,9 @@
 - [[_COMMUNITY_Community 836|Community 836]]
 - [[_COMMUNITY_Community 837|Community 837]]
 - [[_COMMUNITY_Community 838|Community 838]]
+- [[_COMMUNITY_Community 840|Community 840]]
+- [[_COMMUNITY_Community 841|Community 841]]
+- [[_COMMUNITY_Community 842|Community 842]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `KnowledgeGraph` - 14 edges
@@ -878,11 +881,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (840 total, 821 thin omitted)
+## Communities (844 total, 822 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.09
-Nodes (15): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+7 more)
+Cohesion: 0.06
+Nodes (22): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+14 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.33
@@ -917,8 +920,8 @@ Cohesion: 0.11
 Nodes (17): main(), analyze_file_content(), check_god_class(), check_infinite_waiting(), check_local_state_dependency(), check_tight_coupling(), check_unbounded_retries(), Checks for automated retry mechanisms lacking exponential backoff or jitter. (+9 more)
 
 ### Community 832 - "Community 832"
-Cohesion: 0.16
-Nodes (7): calculate_betweenness_centrality(), Calculates Betweenness Centrality for all nodes in the graph using Brandes' algo, main(), HubsGraph, generate_hubs_report(), Generates the Hubs.md report listing ranked bottleneck nodes., TestHubs
+Cohesion: 0.18
+Nodes (8): main(), map_bugs_to_suggestions(), Translates parsed categories of architectural bugs to a list of suggestions, parse_bugs_report(), Parses the Bugs.md report and returns a dict mapping bug categories (1-5) to a l, generate_suggestions_report(), Builds the Suggestions.md report table mapping defects to Solution Architecture, TestSuggestions
 
 ### Community 833 - "Community 833"
 Cohesion: 0.40
@@ -936,19 +939,25 @@ Nodes (4): Implementation Plan - Architectural Bugs Detection, Phase 1: Setup, P
 Cohesion: 0.40
 Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Architectural Bugs Detection, Requirements
 
+### Community 840 - "Community 840"
+Cohesion: 0.40
+Nodes (4): Implementation Plan - Architectural Improvement Suggestions, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 841 - "Community 841"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Architectural Improvement Suggestions, Requirements
+
 ## Knowledge Gaps
-- **845 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+840 more)
+- **852 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+847 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **821 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **822 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `parse_frontmatter()` connect `Community 0` to `Community 832`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `run_test.sh script`, `setup.sh script`, `run_test.sh script` to the rest of the system?**
-  _860 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _870 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.09365079365079365 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05974025974025974 - nodes in this community are weakly interconnected._
 - **Should `Community 831` be split into smaller, more focused modules?**
   _Cohesion score 0.1140819964349376 - nodes in this community are weakly interconnected._
