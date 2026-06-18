@@ -1,16 +1,16 @@
 # Graph Report - hw4  (2026-06-19)
 
 ## Corpus Check
-- 840 files · ~174,201 words
+- 850 files · ~176,436 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1713 nodes · 915 edges · 827 communities (9 shown, 818 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.5)
+- 1750 nodes · 967 edges · 831 communities (12 shown, 819 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `639cfccb`
+- Built from commit: `4d3f73bc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -839,18 +839,21 @@
 - [[_COMMUNITY_Community 822|Community 822]]
 - [[_COMMUNITY_Community 823|Community 823]]
 - [[_COMMUNITY_Community 824|Community 824]]
+- [[_COMMUNITY_Community 827|Community 827]]
+- [[_COMMUNITY_Community 828|Community 828]]
+- [[_COMMUNITY_Community 829|Community 829]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `KnowledgeGraph` - 10 edges
-2. `parse_frontmatter()` - 6 edges
-3. `extract_all_links()` - 6 edges
-4. `TestExtractor` - 5 edges
-5. `extract_wiki_links()` - 4 edges
-6. `extract_markdown_links()` - 4 edges
-7. `generate_report()` - 4 edges
-8. `Implementation Plan` - 4 edges
-9. `Product Requirements Document (PRD)` - 4 edges
-10. `Implementation Plan` - 4 edges
+1. `KnowledgeGraph` - 14 edges
+2. `HubsGraph` - 10 edges
+3. `parse_frontmatter()` - 8 edges
+4. `extract_all_links()` - 6 edges
+5. `calculate_betweenness_centrality()` - 6 edges
+6. `generate_report()` - 5 edges
+7. `generate_hubs_report()` - 5 edges
+8. `TestAnalyzer` - 5 edges
+9. `TestExtractor` - 5 edges
+10. `extract_wiki_links()` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `TestAnalyzer` --uses--> `KnowledgeGraph`  [INFERRED]
@@ -859,15 +862,19 @@
   src/centrality/cli.py → src/centrality/graph.py
 - `main()` --calls--> `generate_report()`  [EXTRACTED]
   src/centrality/cli.py → src/centrality/reporter.py
+- `generate_hubs_report()` --calls--> `calculate_betweenness_centrality()`  [EXTRACTED]
+  src/hubs/reporter.py → src/hubs/analyzer.py
+- `main()` --calls--> `HubsGraph`  [EXTRACTED]
+  src/hubs/cli.py → src/hubs/graph.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (827 total, 818 thin omitted)
+## Communities (831 total, 819 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.10
-Nodes (15): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+7 more)
+Cohesion: 0.06
+Nodes (22): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+14 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.33
@@ -889,15 +896,23 @@ Nodes (4): Implementation Plan, Phase 1: Setup, Phase 2: Development, Phase 3: V
 Cohesion: 0.40
 Nodes (4): Objectives, Overview, Product Requirements Document (PRD), Requirements
 
+### Community 827 - "Community 827"
+Cohesion: 0.40
+Nodes (4): Implementation Plan - Hubs Analysis, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 828 - "Community 828"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Hubs Analysis, Requirements
+
 ## Knowledge Gaps
-- **824 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+819 more)
+- **831 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+826 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **818 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **819 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **What connects `run_test.sh script`, `setup.sh script`, `run_test.sh script` to the rest of the system?**
-  _830 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _839 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.09879032258064516 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05974025974025974 - nodes in this community are weakly interconnected._
