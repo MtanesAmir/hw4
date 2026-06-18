@@ -4,6 +4,16 @@
   "graph": {},
   "nodes": [
     {
+      "label": "bugs_analyzer.py",
+      "file_type": "code",
+      "source_file": "bugs_analyzer.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "bugs_analyzer",
+      "community": 831,
+      "norm_label": "bugs_analyzer.py"
+    },
+    {
       "label": "centrality_analyzer.py",
       "file_type": "code",
       "source_file": "centrality_analyzer.py",
@@ -22874,8 +22884,258 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_analyzer_py_hubs_analyzer",
-      "community": 0,
+      "community": 832,
       "norm_label": "hubs_analyzer.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/bugs/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "bugs_init",
+      "community": 839,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "bugs_cli",
+      "community": 831,
+      "norm_label": "cli.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "bugs_cli_main",
+      "community": 831,
+      "norm_label": "main()"
+    },
+    {
+      "label": "evaluators.py",
+      "file_type": "code",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "bugs_evaluators",
+      "community": 831,
+      "norm_label": "evaluators.py"
+    },
+    {
+      "label": "check_tight_coupling()",
+      "file_type": "code",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "bugs_evaluators_check_tight_coupling",
+      "community": 831,
+      "norm_label": "check_tight_coupling()"
+    },
+    {
+      "label": "check_god_class()",
+      "file_type": "code",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "bugs_evaluators_check_god_class",
+      "community": 831,
+      "norm_label": "check_god_class()"
+    },
+    {
+      "label": "analyze_file_content()",
+      "file_type": "code",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "bugs_evaluators_analyze_file_content",
+      "community": 831,
+      "norm_label": "analyze_file_content()"
+    },
+    {
+      "label": "check_local_state_dependency()",
+      "file_type": "code",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "bugs_evaluators_check_local_state_dependency",
+      "community": 831,
+      "norm_label": "check_local_state_dependency()"
+    },
+    {
+      "label": "check_unbounded_retries()",
+      "file_type": "code",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "bugs_evaluators_check_unbounded_retries",
+      "community": 831,
+      "norm_label": "check_unbounded_retries()"
+    },
+    {
+      "label": "check_infinite_waiting()",
+      "file_type": "code",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L146",
+      "_origin": "ast",
+      "id": "bugs_evaluators_check_infinite_waiting",
+      "community": 831,
+      "norm_label": "check_infinite_waiting()"
+    },
+    {
+      "label": "Identifies nodes with high ratio of cross-community connections.",
+      "file_type": "rationale",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "bugs_evaluators_rationale_5",
+      "community": 831,
+      "norm_label": "identifies nodes with high ratio of cross-community connections."
+    },
+    {
+      "label": "Identifies God Classes/Monoliths based on node degree.",
+      "file_type": "rationale",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "bugs_evaluators_rationale_41",
+      "community": 831,
+      "norm_label": "identifies god classes/monoliths based on node degree."
+    },
+    {
+      "label": "Helper to safely read file content.",
+      "file_type": "rationale",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "bugs_evaluators_rationale_60",
+      "community": 831,
+      "norm_label": "helper to safely read file content."
+    },
+    {
+      "label": "Scans files for local memory session stores without distributed persistence.",
+      "file_type": "rationale",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "bugs_evaluators_rationale_72",
+      "community": 831,
+      "norm_label": "scans files for local memory session stores without distributed persistence."
+    },
+    {
+      "label": "Checks for automated retry mechanisms lacking exponential backoff or jitter.",
+      "file_type": "rationale",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "bugs_evaluators_rationale_109",
+      "community": 831,
+      "norm_label": "checks for automated retry mechanisms lacking exponential backoff or jitter."
+    },
+    {
+      "label": "Detects network requests (requests.get/post) that miss the timeout argument.",
+      "file_type": "rationale",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L147",
+      "_origin": "ast",
+      "id": "bugs_evaluators_rationale_147",
+      "community": 831,
+      "norm_label": "detects network requests (requests.get/post) that miss the timeout argument."
+    },
+    {
+      "label": "graph_loader.py",
+      "file_type": "code",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "bugs_graph_loader",
+      "community": 831,
+      "norm_label": "graph_loader.py"
+    },
+    {
+      "label": "BugsGraph",
+      "file_type": "code",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "bugs_graph_loader_bugsgraph",
+      "community": 831,
+      "norm_label": "bugsgraph"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "bugs_graph_loader_bugsgraph_init",
+      "community": 831,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".add_edge()",
+      "file_type": "code",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "bugs_graph_loader_bugsgraph_add_edge",
+      "community": 831,
+      "norm_label": ".add_edge()"
+    },
+    {
+      "label": ".build_vault_mapping()",
+      "file_type": "code",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "bugs_graph_loader_bugsgraph_build_vault_mapping",
+      "community": 831,
+      "norm_label": ".build_vault_mapping()"
+    },
+    {
+      "label": ".load_from_json()",
+      "file_type": "code",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "bugs_graph_loader_bugsgraph_load_from_json",
+      "community": 831,
+      "norm_label": ".load_from_json()"
+    },
+    {
+      "label": "reporter.py",
+      "file_type": "code",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "bugs_reporter",
+      "community": 831,
+      "norm_label": "reporter.py"
+    },
+    {
+      "label": "generate_bugs_report()",
+      "file_type": "code",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "bugs_reporter_generate_bugs_report",
+      "community": 831,
+      "norm_label": "generate_bugs_report()"
+    },
+    {
+      "label": "Evaluates rules and generates the architectural bugs report.",
+      "file_type": "rationale",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "bugs_reporter_rationale_11",
+      "community": 831,
+      "norm_label": "evaluates rules and generates the architectural bugs report."
     },
     {
       "label": "__init__.py",
@@ -23144,7 +23404,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hubs_analyzer_py_hubs_analyzer",
-      "community": 0,
+      "community": 832,
       "norm_label": "analyzer.py"
     },
     {
@@ -23154,7 +23414,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_analyzer_calculate_betweenness_centrality",
-      "community": 0,
+      "community": 832,
       "norm_label": "calculate_betweenness_centrality()"
     },
     {
@@ -23164,7 +23424,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "hubs_analyzer_rationale_2",
-      "community": 0,
+      "community": 832,
       "norm_label": "calculates betweenness centrality for all nodes in the graph using brandes' algo"
     },
     {
@@ -23174,7 +23434,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_cli",
-      "community": 0,
+      "community": 832,
       "norm_label": "cli.py"
     },
     {
@@ -23184,7 +23444,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hubs_cli_main",
-      "community": 0,
+      "community": 832,
       "norm_label": "main()"
     },
     {
@@ -23194,7 +23454,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_graph",
-      "community": 0,
+      "community": 832,
       "norm_label": "graph.py"
     },
     {
@@ -23204,7 +23464,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph",
-      "community": 0,
+      "community": 832,
       "norm_label": "hubsgraph"
     },
     {
@@ -23214,7 +23474,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_init",
-      "community": 0,
+      "community": 832,
       "norm_label": ".__init__()"
     },
     {
@@ -23224,7 +23484,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_add_node",
-      "community": 0,
+      "community": 832,
       "norm_label": ".add_node()"
     },
     {
@@ -23234,7 +23494,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_add_edge",
-      "community": 0,
+      "community": 832,
       "norm_label": ".add_edge()"
     },
     {
@@ -23244,7 +23504,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_build_vault_mapping",
-      "community": 0,
+      "community": 832,
       "norm_label": ".build_vault_mapping()"
     },
     {
@@ -23254,7 +23514,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_load_from_json",
-      "community": 0,
+      "community": 832,
       "norm_label": ".load_from_json()"
     },
     {
@@ -23264,7 +23524,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_reporter",
-      "community": 0,
+      "community": 832,
       "norm_label": "reporter.py"
     },
     {
@@ -23274,7 +23534,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "hubs_reporter_generate_hubs_report",
-      "community": 0,
+      "community": 832,
       "norm_label": "generate_hubs_report()"
     },
     {
@@ -23284,7 +23544,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "hubs_reporter_rationale_5",
-      "community": 0,
+      "community": 832,
       "norm_label": "generates the hubs.md report listing ranked bottleneck nodes."
     },
     {
@@ -23346,6 +23606,96 @@
       "id": "tests_test_analyzer_testanalyzer_test_generate_report",
       "community": 0,
       "norm_label": ".test_generate_report()"
+    },
+    {
+      "label": "test_bugs.py",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_bugs",
+      "community": 831,
+      "norm_label": "test_bugs.py"
+    },
+    {
+      "label": "TestBugs",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs",
+      "community": 831,
+      "norm_label": "testbugs"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs_setup",
+      "community": 831,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".tearDown()",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs_teardown",
+      "community": 831,
+      "norm_label": ".teardown()"
+    },
+    {
+      "label": ".test_tight_coupling()",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs_test_tight_coupling",
+      "community": 831,
+      "norm_label": ".test_tight_coupling()"
+    },
+    {
+      "label": ".test_god_class()",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs_test_god_class",
+      "community": 831,
+      "norm_label": ".test_god_class()"
+    },
+    {
+      "label": ".test_local_state_dependency()",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs_test_local_state_dependency",
+      "community": 831,
+      "norm_label": ".test_local_state_dependency()"
+    },
+    {
+      "label": ".test_unbounded_retries()",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs_test_unbounded_retries",
+      "community": 831,
+      "norm_label": ".test_unbounded_retries()"
+    },
+    {
+      "label": ".test_infinite_waiting()",
+      "file_type": "code",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "tests_test_bugs_testbugs_test_infinite_waiting",
+      "community": 831,
+      "norm_label": ".test_infinite_waiting()"
     },
     {
       "label": "test_extractor.py",
@@ -23414,7 +23764,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_hubs",
-      "community": 0,
+      "community": 832,
       "norm_label": "test_hubs.py"
     },
     {
@@ -23424,7 +23774,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs",
-      "community": 0,
+      "community": 832,
       "norm_label": "testhubs"
     },
     {
@@ -23434,7 +23784,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs_test_star_graph_betweenness",
-      "community": 0,
+      "community": 832,
       "norm_label": ".test_star_graph_betweenness()"
     },
     {
@@ -23444,7 +23794,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs_test_path_graph_betweenness",
-      "community": 0,
+      "community": 832,
       "norm_label": ".test_path_graph_betweenness()"
     },
     {
@@ -23666,6 +24016,246 @@
       "id": "bugsinpy_readme_example_bugsinpy_command",
       "community": 1,
       "norm_label": "example bugsinpy command"
+    },
+    {
+      "label": "Bridges_plan.md",
+      "file_type": "document",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bridges_plan",
+      "community": 833,
+      "norm_label": "bridges_plan.md"
+    },
+    {
+      "label": "Implementation Plan - Bridges Analysis",
+      "file_type": "document",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bridges_plan_implementation_plan_bridges_analysis",
+      "community": 833,
+      "norm_label": "implementation plan - bridges analysis"
+    },
+    {
+      "label": "Phase 1: Setup",
+      "file_type": "document",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_bridges_plan_phase_1_setup",
+      "community": 833,
+      "norm_label": "phase 1: setup"
+    },
+    {
+      "label": "Phase 2: Development",
+      "file_type": "document",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_bridges_plan_phase_2_development",
+      "community": 833,
+      "norm_label": "phase 2: development"
+    },
+    {
+      "label": "Phase 3: Verification",
+      "file_type": "document",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "docs_bridges_plan_phase_3_verification",
+      "community": 833,
+      "norm_label": "phase 3: verification"
+    },
+    {
+      "label": "Bridges_prd.md",
+      "file_type": "document",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bridges_prd",
+      "community": 834,
+      "norm_label": "bridges_prd.md"
+    },
+    {
+      "label": "Product Requirements Document (PRD) - Bridges Analysis",
+      "file_type": "document",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bridges_prd_product_requirements_document_prd_bridges_analysis",
+      "community": 834,
+      "norm_label": "product requirements document (prd) - bridges analysis"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_bridges_prd_overview",
+      "community": 834,
+      "norm_label": "overview"
+    },
+    {
+      "label": "Objectives",
+      "file_type": "document",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_bridges_prd_objectives",
+      "community": 834,
+      "norm_label": "objectives"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "docs_bridges_prd_requirements",
+      "community": 834,
+      "norm_label": "requirements"
+    },
+    {
+      "label": "Bridges_todo.md",
+      "file_type": "document",
+      "source_file": "docs/Bridges_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bridges_todo",
+      "community": 837,
+      "norm_label": "bridges_todo.md"
+    },
+    {
+      "label": "Todo List - Bridges Analysis",
+      "file_type": "document",
+      "source_file": "docs/Bridges_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bridges_todo_todo_list_bridges_analysis",
+      "community": 837,
+      "norm_label": "todo list - bridges analysis"
+    },
+    {
+      "label": "Bugs_plan.md",
+      "file_type": "document",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bugs_plan",
+      "community": 835,
+      "norm_label": "bugs_plan.md"
+    },
+    {
+      "label": "Implementation Plan - Architectural Bugs Detection",
+      "file_type": "document",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bugs_plan_implementation_plan_architectural_bugs_detection",
+      "community": 835,
+      "norm_label": "implementation plan - architectural bugs detection"
+    },
+    {
+      "label": "Phase 1: Setup",
+      "file_type": "document",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_bugs_plan_phase_1_setup",
+      "community": 835,
+      "norm_label": "phase 1: setup"
+    },
+    {
+      "label": "Phase 2: Development",
+      "file_type": "document",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_bugs_plan_phase_2_development",
+      "community": 835,
+      "norm_label": "phase 2: development"
+    },
+    {
+      "label": "Phase 3: Verification",
+      "file_type": "document",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "docs_bugs_plan_phase_3_verification",
+      "community": 835,
+      "norm_label": "phase 3: verification"
+    },
+    {
+      "label": "Bugs_prd.md",
+      "file_type": "document",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bugs_prd",
+      "community": 836,
+      "norm_label": "bugs_prd.md"
+    },
+    {
+      "label": "Product Requirements Document (PRD) - Architectural Bugs Detection",
+      "file_type": "document",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bugs_prd_product_requirements_document_prd_architectural_bugs_detection",
+      "community": 836,
+      "norm_label": "product requirements document (prd) - architectural bugs detection"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_bugs_prd_overview",
+      "community": 836,
+      "norm_label": "overview"
+    },
+    {
+      "label": "Objectives",
+      "file_type": "document",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_bugs_prd_objectives",
+      "community": 836,
+      "norm_label": "objectives"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "docs_bugs_prd_requirements",
+      "community": 836,
+      "norm_label": "requirements"
+    },
+    {
+      "label": "Bugs_todo.md",
+      "file_type": "document",
+      "source_file": "docs/Bugs_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bugs_todo",
+      "community": 838,
+      "norm_label": "bugs_todo.md"
+    },
+    {
+      "label": "Todo List - Architectural Bugs Detection",
+      "file_type": "document",
+      "source_file": "docs/Bugs_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_bugs_todo_todo_list_architectural_bugs_detection",
+      "community": 838,
+      "norm_label": "todo list - architectural bugs detection"
     },
     {
       "label": "Centrality_plan.md",
@@ -24029,6 +24619,17 @@
     }
   ],
   "links": [
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bugs_analyzer.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "bugs_analyzer",
+      "target": "bugs_cli",
+      "confidence_score": 1.0
+    },
     {
       "relation": "imports_from",
       "context": "import",
@@ -32388,8 +32989,592 @@
       "source_file": "hubs_analyzer.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_analyzer_py_hubs_analyzer",
-      "target": "hubs_cli",
+      "target": "hubs_cli"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "bugs_cli",
+      "target": "bugs_cli_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "bugs_cli",
+      "target": "bugs_graph_loader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "bugs_cli",
+      "target": "bugs_graph_loader_bugsgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bugs_cli",
+      "target": "bugs_reporter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bugs_cli",
+      "target": "bugs_reporter_generate_bugs_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "bugs_cli_main",
+      "target": "bugs_graph_loader_bugsgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/cli.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "bugs_cli_main",
+      "target": "bugs_reporter_generate_bugs_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "bugs_evaluators",
+      "target": "bugs_evaluators_analyze_file_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "bugs_evaluators",
+      "target": "bugs_evaluators_check_god_class",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "bugs_evaluators",
+      "target": "bugs_evaluators_check_infinite_waiting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "bugs_evaluators",
+      "target": "bugs_evaluators_check_local_state_dependency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "bugs_evaluators",
+      "target": "bugs_evaluators_check_tight_coupling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "bugs_evaluators",
+      "target": "bugs_evaluators_check_unbounded_retries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "bugs_reporter",
+      "target": "bugs_evaluators",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_test_bugs",
+      "target": "bugs_evaluators",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bugs_evaluators_rationale_5",
+      "target": "bugs_evaluators_check_tight_coupling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "bugs_reporter",
+      "target": "bugs_evaluators_check_tight_coupling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "bugs_reporter_generate_bugs_report",
+      "target": "bugs_evaluators_check_tight_coupling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_tight_coupling",
+      "target": "bugs_evaluators_check_tight_coupling"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "bugs_evaluators_rationale_41",
+      "target": "bugs_evaluators_check_god_class",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "bugs_reporter",
+      "target": "bugs_evaluators_check_god_class",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "bugs_reporter_generate_bugs_report",
+      "target": "bugs_evaluators_check_god_class",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_god_class",
+      "target": "bugs_evaluators_check_god_class"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "bugs_evaluators_check_infinite_waiting",
+      "target": "bugs_evaluators_analyze_file_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "bugs_evaluators_check_local_state_dependency",
+      "target": "bugs_evaluators_analyze_file_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "bugs_evaluators_check_unbounded_retries",
+      "target": "bugs_evaluators_analyze_file_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "bugs_evaluators_rationale_60",
+      "target": "bugs_evaluators_analyze_file_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "bugs_evaluators_rationale_72",
+      "target": "bugs_evaluators_check_local_state_dependency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "bugs_reporter",
+      "target": "bugs_evaluators_check_local_state_dependency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "bugs_reporter_generate_bugs_report",
+      "target": "bugs_evaluators_check_local_state_dependency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_local_state_dependency",
+      "target": "bugs_evaluators_check_local_state_dependency"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "bugs_evaluators_rationale_109",
+      "target": "bugs_evaluators_check_unbounded_retries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "bugs_reporter",
+      "target": "bugs_evaluators_check_unbounded_retries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "bugs_reporter_generate_bugs_report",
+      "target": "bugs_evaluators_check_unbounded_retries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_unbounded_retries",
+      "target": "bugs_evaluators_check_unbounded_retries"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/evaluators.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "bugs_evaluators_rationale_147",
+      "target": "bugs_evaluators_check_infinite_waiting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "bugs_reporter",
+      "target": "bugs_evaluators_check_infinite_waiting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "bugs_reporter_generate_bugs_report",
+      "target": "bugs_evaluators_check_infinite_waiting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_infinite_waiting",
+      "target": "bugs_evaluators_check_infinite_waiting"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "bugs_graph_loader",
+      "target": "bugs_graph_loader_bugsgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tests_test_bugs",
+      "target": "bugs_graph_loader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "bugs_graph_loader_bugsgraph",
+      "target": "bugs_graph_loader_bugsgraph_add_edge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "bugs_graph_loader_bugsgraph",
+      "target": "bugs_graph_loader_bugsgraph_build_vault_mapping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "bugs_graph_loader_bugsgraph",
+      "target": "bugs_graph_loader_bugsgraph_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "bugs_graph_loader_bugsgraph",
+      "target": "bugs_graph_loader_bugsgraph_load_from_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "tests_test_bugs_testbugs",
+      "target": "bugs_graph_loader_bugsgraph",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_god_class",
+      "target": "bugs_graph_loader_bugsgraph"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_infinite_waiting",
+      "target": "bugs_graph_loader_bugsgraph"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_local_state_dependency",
+      "target": "bugs_graph_loader_bugsgraph"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_tight_coupling",
+      "target": "bugs_graph_loader_bugsgraph"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs_test_unbounded_retries",
+      "target": "bugs_graph_loader_bugsgraph"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "bugs_graph_loader_bugsgraph_load_from_json",
+      "target": "bugs_graph_loader_bugsgraph_add_edge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/graph_loader.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "bugs_graph_loader_bugsgraph_load_from_json",
+      "target": "bugs_graph_loader_bugsgraph_build_vault_mapping",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "bugs_reporter",
+      "target": "bugs_reporter_generate_bugs_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/bugs/reporter.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bugs_reporter_rationale_11",
+      "target": "bugs_reporter_generate_bugs_report",
       "confidence_score": 1.0
     },
     {
@@ -32526,9 +33711,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph",
-      "target": "centrality_extractor",
-      "confidence_score": 1.0
+      "target": "centrality_extractor"
     },
     {
       "relation": "imports_from",
@@ -32770,9 +33955,9 @@
       "source_file": "src/centrality/graph.py",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "centrality_graph_knowledgegraph",
-      "target": "centrality_graph_knowledgegraph_build_vault_mapping",
-      "confidence_score": 1.0
+      "target": "centrality_graph_knowledgegraph_build_vault_mapping"
     },
     {
       "relation": "method",
@@ -32800,9 +33985,9 @@
       "source_file": "src/centrality/graph.py",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "centrality_graph_knowledgegraph",
-      "target": "centrality_graph_knowledgegraph_load_from_json",
-      "confidence_score": 1.0
+      "target": "centrality_graph_knowledgegraph_load_from_json"
     },
     {
       "relation": "uses",
@@ -32876,9 +34061,9 @@
       "source_file": "src/centrality/graph.py",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "centrality_graph_knowledgegraph_load_from_json",
-      "target": "centrality_graph_knowledgegraph_add_edge",
-      "confidence_score": 1.0
+      "target": "centrality_graph_knowledgegraph_add_edge"
     },
     {
       "relation": "calls",
@@ -32887,9 +34072,9 @@
       "source_file": "src/centrality/graph.py",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "centrality_graph_knowledgegraph_load_from_json",
-      "target": "centrality_graph_knowledgegraph_build_vault_mapping",
-      "confidence_score": 1.0
+      "target": "centrality_graph_knowledgegraph_build_vault_mapping"
     },
     {
       "relation": "rationale_for",
@@ -32897,9 +34082,9 @@
       "source_file": "src/centrality/graph.py",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "centrality_graph_rationale_155",
-      "target": "centrality_graph_knowledgegraph_calculate_degrees",
-      "confidence_score": 1.0
+      "target": "centrality_graph_knowledgegraph_calculate_degrees"
     },
     {
       "relation": "contains",
@@ -32938,9 +34123,9 @@
       "source_file": "src/hubs/analyzer.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_hubs_analyzer_py_hubs_analyzer",
-      "target": "hubs_analyzer_calculate_betweenness_centrality",
-      "confidence_score": 1.0
+      "target": "hubs_analyzer_calculate_betweenness_centrality"
     },
     {
       "relation": "rationale_for",
@@ -32948,9 +34133,9 @@
       "source_file": "src/hubs/analyzer.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_analyzer_rationale_2",
-      "target": "hubs_analyzer_calculate_betweenness_centrality",
-      "confidence_score": 1.0
+      "target": "hubs_analyzer_calculate_betweenness_centrality"
     },
     {
       "relation": "imports",
@@ -32959,9 +34144,9 @@
       "source_file": "src/hubs/reporter.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_reporter",
-      "target": "hubs_analyzer_calculate_betweenness_centrality",
-      "confidence_score": 1.0
+      "target": "hubs_analyzer_calculate_betweenness_centrality"
     },
     {
       "relation": "calls",
@@ -32970,9 +34155,9 @@
       "source_file": "src/hubs/reporter.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_reporter_generate_hubs_report",
-      "target": "hubs_analyzer_calculate_betweenness_centrality",
-      "confidence_score": 1.0
+      "target": "hubs_analyzer_calculate_betweenness_centrality"
     },
     {
       "relation": "calls",
@@ -33002,9 +34187,9 @@
       "source_file": "src/hubs/cli.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_cli",
-      "target": "hubs_cli_main",
-      "confidence_score": 1.0
+      "target": "hubs_cli_main"
     },
     {
       "relation": "imports_from",
@@ -33013,9 +34198,9 @@
       "source_file": "src/hubs/cli.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_cli",
-      "target": "hubs_graph",
-      "confidence_score": 1.0
+      "target": "hubs_graph"
     },
     {
       "relation": "imports",
@@ -33024,9 +34209,9 @@
       "source_file": "src/hubs/cli.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_cli",
-      "target": "hubs_graph_hubsgraph",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph"
     },
     {
       "relation": "imports_from",
@@ -33035,9 +34220,9 @@
       "source_file": "src/hubs/cli.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_cli",
-      "target": "hubs_reporter",
-      "confidence_score": 1.0
+      "target": "hubs_reporter"
     },
     {
       "relation": "imports",
@@ -33046,9 +34231,9 @@
       "source_file": "src/hubs/cli.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_cli",
-      "target": "hubs_reporter_generate_hubs_report",
-      "confidence_score": 1.0
+      "target": "hubs_reporter_generate_hubs_report"
     },
     {
       "relation": "calls",
@@ -33057,9 +34242,9 @@
       "source_file": "src/hubs/cli.py",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_cli_main",
-      "target": "hubs_graph_hubsgraph",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph"
     },
     {
       "relation": "calls",
@@ -33068,9 +34253,9 @@
       "source_file": "src/hubs/cli.py",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_cli_main",
-      "target": "hubs_reporter_generate_hubs_report",
-      "confidence_score": 1.0
+      "target": "hubs_reporter_generate_hubs_report"
     },
     {
       "relation": "contains",
@@ -33078,9 +34263,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph",
-      "target": "hubs_graph_hubsgraph",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph"
     },
     {
       "relation": "imports_from",
@@ -33089,9 +34274,9 @@
       "source_file": "tests/test_hubs.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_hubs",
-      "target": "hubs_graph",
-      "confidence_score": 1.0
+      "target": "hubs_graph"
     },
     {
       "relation": "method",
@@ -33099,9 +34284,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph",
-      "target": "hubs_graph_hubsgraph_add_edge",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_add_edge"
     },
     {
       "relation": "method",
@@ -33109,9 +34294,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph",
-      "target": "hubs_graph_hubsgraph_add_node",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_add_node"
     },
     {
       "relation": "method",
@@ -33119,9 +34304,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph",
-      "target": "hubs_graph_hubsgraph_build_vault_mapping",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_build_vault_mapping"
     },
     {
       "relation": "method",
@@ -33129,9 +34314,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph",
-      "target": "hubs_graph_hubsgraph_init",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_init"
     },
     {
       "relation": "method",
@@ -33139,9 +34324,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph",
-      "target": "hubs_graph_hubsgraph_load_from_json",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_load_from_json"
     },
     {
       "relation": "calls",
@@ -33172,9 +34357,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph_load_from_json",
-      "target": "hubs_graph_hubsgraph_add_node",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_add_node"
     },
     {
       "relation": "calls",
@@ -33183,9 +34368,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph_load_from_json",
-      "target": "hubs_graph_hubsgraph_add_edge",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_add_edge"
     },
     {
       "relation": "calls",
@@ -33194,9 +34379,9 @@
       "source_file": "src/hubs/graph.py",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_graph_hubsgraph_load_from_json",
-      "target": "hubs_graph_hubsgraph_build_vault_mapping",
-      "confidence_score": 1.0
+      "target": "hubs_graph_hubsgraph_build_vault_mapping"
     },
     {
       "relation": "contains",
@@ -33204,9 +34389,9 @@
       "source_file": "src/hubs/reporter.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_reporter",
-      "target": "hubs_reporter_generate_hubs_report",
-      "confidence_score": 1.0
+      "target": "hubs_reporter_generate_hubs_report"
     },
     {
       "relation": "rationale_for",
@@ -33214,9 +34399,9 @@
       "source_file": "src/hubs/reporter.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "hubs_reporter_rationale_5",
-      "target": "hubs_reporter_generate_hubs_report",
-      "confidence_score": 1.0
+      "target": "hubs_reporter_generate_hubs_report"
     },
     {
       "relation": "contains",
@@ -33234,9 +34419,9 @@
       "source_file": "tests/test_analyzer.py",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_analyzer_testanalyzer",
-      "target": "tests_test_analyzer_testanalyzer_test_generate_report",
-      "confidence_score": 1.0
+      "target": "tests_test_analyzer_testanalyzer_test_generate_report"
     },
     {
       "relation": "method",
@@ -33254,8 +34439,88 @@
       "source_file": "tests/test_analyzer.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_analyzer_testanalyzer",
-      "target": "tests_test_analyzer_testanalyzer_test_load_from_json",
+      "target": "tests_test_analyzer_testanalyzer_test_load_from_json"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tests_test_bugs",
+      "target": "tests_test_bugs_testbugs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs",
+      "target": "tests_test_bugs_testbugs_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs",
+      "target": "tests_test_bugs_testbugs_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs",
+      "target": "tests_test_bugs_testbugs_test_god_class",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs",
+      "target": "tests_test_bugs_testbugs_test_infinite_waiting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs",
+      "target": "tests_test_bugs_testbugs_test_local_state_dependency",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs",
+      "target": "tests_test_bugs_testbugs_test_tight_coupling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_bugs.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "tests_test_bugs_testbugs",
+      "target": "tests_test_bugs_testbugs_test_unbounded_retries",
       "confidence_score": 1.0
     },
     {
@@ -33314,9 +34579,9 @@
       "source_file": "tests/test_hubs.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_hubs",
-      "target": "tests_test_hubs_testhubs",
-      "confidence_score": 1.0
+      "target": "tests_test_hubs_testhubs"
     },
     {
       "relation": "method",
@@ -33324,9 +34589,9 @@
       "source_file": "tests/test_hubs.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_hubs_testhubs",
-      "target": "tests_test_hubs_testhubs_test_path_graph_betweenness",
-      "confidence_score": 1.0
+      "target": "tests_test_hubs_testhubs_test_path_graph_betweenness"
     },
     {
       "relation": "method",
@@ -33334,9 +34599,9 @@
       "source_file": "tests/test_hubs.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_hubs_testhubs",
-      "target": "tests_test_hubs_testhubs_test_star_graph_betweenness",
-      "confidence_score": 1.0
+      "target": "tests_test_hubs_testhubs_test_star_graph_betweenness"
     },
     {
       "relation": "contains",
@@ -33491,6 +34756,186 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_bridges_plan",
+      "target": "docs_bridges_plan_implementation_plan_bridges_analysis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_bridges_plan_implementation_plan_bridges_analysis",
+      "target": "docs_bridges_plan_phase_1_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "docs_bridges_plan_implementation_plan_bridges_analysis",
+      "target": "docs_bridges_plan_phase_2_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_plan.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_bridges_plan_implementation_plan_bridges_analysis",
+      "target": "docs_bridges_plan_phase_3_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_bridges_prd",
+      "target": "docs_bridges_prd_product_requirements_document_prd_bridges_analysis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_bridges_prd_product_requirements_document_prd_bridges_analysis",
+      "target": "docs_bridges_prd_objectives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_bridges_prd_product_requirements_document_prd_bridges_analysis",
+      "target": "docs_bridges_prd_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_prd.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "docs_bridges_prd_product_requirements_document_prd_bridges_analysis",
+      "target": "docs_bridges_prd_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bridges_todo.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_bridges_todo",
+      "target": "docs_bridges_todo_todo_list_bridges_analysis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_bugs_plan",
+      "target": "docs_bugs_plan_implementation_plan_architectural_bugs_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_bugs_plan_implementation_plan_architectural_bugs_detection",
+      "target": "docs_bugs_plan_phase_1_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "docs_bugs_plan_implementation_plan_architectural_bugs_detection",
+      "target": "docs_bugs_plan_phase_2_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_plan.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "docs_bugs_plan_implementation_plan_architectural_bugs_detection",
+      "target": "docs_bugs_plan_phase_3_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_bugs_prd",
+      "target": "docs_bugs_prd_product_requirements_document_prd_architectural_bugs_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_bugs_prd_product_requirements_document_prd_architectural_bugs_detection",
+      "target": "docs_bugs_prd_objectives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_bugs_prd_product_requirements_document_prd_architectural_bugs_detection",
+      "target": "docs_bugs_prd_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_prd.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "docs_bugs_prd_product_requirements_document_prd_architectural_bugs_detection",
+      "target": "docs_bugs_prd_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Bugs_todo.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_bugs_todo",
+      "target": "docs_bugs_todo_todo_list_architectural_bugs_detection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/Centrality_plan.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -33584,9 +35029,9 @@
       "source_file": "docs/Hubs_plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_plan",
-      "target": "docs_hubs_plan_implementation_plan_hubs_analysis",
-      "confidence_score": 1.0
+      "target": "docs_hubs_plan_implementation_plan_hubs_analysis"
     },
     {
       "relation": "contains",
@@ -33594,9 +35039,9 @@
       "source_file": "docs/Hubs_plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_plan_implementation_plan_hubs_analysis",
-      "target": "docs_hubs_plan_phase_1_setup",
-      "confidence_score": 1.0
+      "target": "docs_hubs_plan_phase_1_setup"
     },
     {
       "relation": "contains",
@@ -33604,9 +35049,9 @@
       "source_file": "docs/Hubs_plan.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_plan_implementation_plan_hubs_analysis",
-      "target": "docs_hubs_plan_phase_2_development",
-      "confidence_score": 1.0
+      "target": "docs_hubs_plan_phase_2_development"
     },
     {
       "relation": "contains",
@@ -33614,9 +35059,9 @@
       "source_file": "docs/Hubs_plan.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_plan_implementation_plan_hubs_analysis",
-      "target": "docs_hubs_plan_phase_3_verification",
-      "confidence_score": 1.0
+      "target": "docs_hubs_plan_phase_3_verification"
     },
     {
       "relation": "contains",
@@ -33624,9 +35069,9 @@
       "source_file": "docs/Hubs_prd.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_prd",
-      "target": "docs_hubs_prd_product_requirements_document_prd_hubs_analysis",
-      "confidence_score": 1.0
+      "target": "docs_hubs_prd_product_requirements_document_prd_hubs_analysis"
     },
     {
       "relation": "contains",
@@ -33634,9 +35079,9 @@
       "source_file": "docs/Hubs_prd.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_prd_product_requirements_document_prd_hubs_analysis",
-      "target": "docs_hubs_prd_objectives",
-      "confidence_score": 1.0
+      "target": "docs_hubs_prd_objectives"
     },
     {
       "relation": "contains",
@@ -33644,9 +35089,9 @@
       "source_file": "docs/Hubs_prd.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_prd_product_requirements_document_prd_hubs_analysis",
-      "target": "docs_hubs_prd_overview",
-      "confidence_score": 1.0
+      "target": "docs_hubs_prd_overview"
     },
     {
       "relation": "contains",
@@ -33654,9 +35099,9 @@
       "source_file": "docs/Hubs_prd.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_prd_product_requirements_document_prd_hubs_analysis",
-      "target": "docs_hubs_prd_requirements",
-      "confidence_score": 1.0
+      "target": "docs_hubs_prd_requirements"
     },
     {
       "relation": "contains",
@@ -33664,9 +35109,9 @@
       "source_file": "docs/Hubs_todo.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_hubs_todo",
-      "target": "docs_hubs_todo_todo_list_hubs_analysis",
-      "confidence_score": 1.0
+      "target": "docs_hubs_todo_todo_list_hubs_analysis"
     },
     {
       "relation": "contains",
@@ -33760,5 +35205,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4d3f73bc34db5a4b03b0bcd5ddb98175034c2e5c"
+  "built_at_commit": "2518d9efb24f783573f6fd128fa3b34c68783da8"
 }
