@@ -1,4 +1,5 @@
 import os
+import re
 from .extractor import parse_frontmatter, extract_all_links
 
 class KnowledgeGraph:
@@ -84,6 +85,71 @@ class KnowledgeGraph:
                     
                     if norm_target_node not in visited:
                         queue.append(norm_target_node)
+
+
+    def build_vault_mapping(self) -> dict:
+        mapping = {}
+        if not self.vault_dir or not os.path.exists(self.vault_dir):
+            return mapping
+            
+        for fname in os.listdir(self.vault_dir):
+            if fname.lower().endswith('.md'):
+                file_path = os.path.join(self.vault_dir, fname)
+                try:
+                    with open(file_path, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                    metadata = parse_frontmatter(content)
+                    src_file = metadata.get('source_file')
+                    loc = metadata.get('location', 'N/A')
+                    if src_file:
+                        base_name = os.path.splitext(fname)[0]
+                        # Extract the node label by removing trailing _X suffix
+                        label = re.sub(r'_\d+$', '', base_name)
+                        mapping[(label, src_file, loc)] = base_name
+                except Exception:
+                    pass
+        return mapping
+
+    def load_from_json(self, json_file_path: str):
+        import json
+        with open(json_file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            
+        vault_map = self.build_vault_mapping()
+        id_to_name = {}
+        
+        for node_data in data.get('nodes', []):
+            node_id = node_data.get('id')
+            label = node_data.get('label')
+            src_file = node_data.get('source_file', 'N/A')
+            loc = node_data.get('source_location', 'N/A')
+            file_type = node_data.get('file_type', 'N/A')
+            
+            # Use label, src_file, and loc to uniquely identify in the vault
+            vault_name = vault_map.get((label, src_file, loc))
+            if vault_name:
+                node_name = vault_name
+            else:
+                node_name = label
+                
+            id_to_name[node_id] = node_name
+            
+            if node_name not in self.nodes:
+                self.nodes[node_name] = {
+                    'label': node_name,
+                    'file_path': os.path.join(self.vault_dir, node_name + ".md") if self.vault_dir else "",
+                    'source_file': src_file,
+                    'location': loc,
+                    'type': file_type
+                }
+                
+        for link in data.get('links', []):
+            src_id = link.get('source')
+            tgt_id = link.get('target')
+            u = id_to_name.get(src_id)
+            v = id_to_name.get(tgt_id)
+            if u and v:
+                self.add_edge(u, v)
 
     def calculate_degrees(self) -> dict:
         """
