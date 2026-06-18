@@ -1,0 +1,274 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Community 0",
+      "x": 0,
+      "y": 0,
+      "width": 660,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_snippets_io_rationale_1",
+      "type": "file",
+      "file": "Simple python script to read a json file of loan then add perform some calculati.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_io_average_paid_loans",
+      "type": "file",
+      "file": "average_paid_loans().md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_io_calculate_paid_loans",
+      "type": "file",
+      "file": "calculate_paid_loans().md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_io_calculate_unpaid_loans",
+      "type": "file",
+      "file": "calculate_unpaid_loans().md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_io",
+      "type": "file",
+      "file": "io.py.md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_io_read_file",
+      "type": "file",
+      "file": "read_file().md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Community 1",
+      "x": 740,
+      "y": 0,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_snippets_foobar_rationale_1",
+      "type": "file",
+      "file": "The purpose of this snippet is to test your knowledge of default arguments for f.md",
+      "x": 760,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_init",
+      "type": "file",
+      "file": "__init__.py.md",
+      "x": 960,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_foobar_foo",
+      "type": "file",
+      "file": "foo().md",
+      "x": 1160,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_foobar",
+      "type": "file",
+      "file": "foobar.py.md",
+      "x": 760,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Community 2",
+      "x": 0,
+      "y": 480,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_readme_buggy_python",
+      "type": "file",
+      "file": "Buggy Python Project.md",
+      "x": 20,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_python3_runtime",
+      "type": "file",
+      "file": "Python3.md",
+      "x": 220,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_main",
+      "type": "file",
+      "file": "main.py.md",
+      "x": 420,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Community 3",
+      "x": 740,
+      "y": 480,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_snippets_loop_rationale_1",
+      "type": "file",
+      "file": "Simple array of lambda functions that is used to calculate the addition of a num.md",
+      "x": 760,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_loop_lambda_array",
+      "type": "file",
+      "file": "lambda_array().md",
+      "x": 960,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_snippets_loop",
+      "type": "file",
+      "file": "loop.py.md",
+      "x": 1160,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_main_snippets_foobar_foo",
+      "fromNode": "n_main",
+      "toNode": "n_snippets_foobar_foo",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_main_readme_buggy_python",
+      "fromNode": "n_main",
+      "toNode": "n_readme_buggy_python",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_init_snippets_foobar",
+      "fromNode": "n_snippets_init",
+      "toNode": "n_snippets_foobar",
+      "label": "re_exports [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_init_snippets_foobar_foo",
+      "fromNode": "n_snippets_init",
+      "toNode": "n_snippets_foobar_foo",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_foobar_snippets_foobar_foo",
+      "fromNode": "n_snippets_foobar",
+      "toNode": "n_snippets_foobar_foo",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_foobar_snippets_foobar_rationale_1",
+      "fromNode": "n_snippets_foobar",
+      "toNode": "n_snippets_foobar_rationale_1",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_io_snippets_io_average_paid_loans",
+      "fromNode": "n_snippets_io",
+      "toNode": "n_snippets_io_average_paid_loans",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_io_snippets_io_calculate_paid_loans",
+      "fromNode": "n_snippets_io",
+      "toNode": "n_snippets_io_calculate_paid_loans",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_io_snippets_io_calculate_unpaid_loans",
+      "fromNode": "n_snippets_io",
+      "toNode": "n_snippets_io_calculate_unpaid_loans",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_io_snippets_io_read_file",
+      "fromNode": "n_snippets_io",
+      "toNode": "n_snippets_io_read_file",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_io_snippets_io_rationale_1",
+      "fromNode": "n_snippets_io",
+      "toNode": "n_snippets_io_rationale_1",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_loop_snippets_loop_lambda_array",
+      "fromNode": "n_snippets_loop",
+      "toNode": "n_snippets_loop_lambda_array",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_snippets_loop_snippets_loop_rationale_1",
+      "fromNode": "n_snippets_loop",
+      "toNode": "n_snippets_loop_rationale_1",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_readme_buggy_python_python3_runtime",
+      "fromNode": "n_readme_buggy_python",
+      "toNode": "n_python3_runtime",
+      "label": "references [EXTRACTED]"
+    }
+  ]
+}

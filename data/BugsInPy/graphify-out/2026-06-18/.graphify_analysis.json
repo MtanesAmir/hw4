@@ -1,0 +1,216 @@
+{
+  "communities": {
+    "0": [
+      "ansible_project",
+      "black_project",
+      "bugsinpy_compile",
+      "bugsinpy_coverage",
+      "bugsinpy_fuzz",
+      "bugsinpy_info",
+      "bugsinpy_mutation",
+      "bugsinpy_readme",
+      "bugsinpy_test",
+      "cookiecutter_project",
+      "fastapi_project",
+      "httpie_project",
+      "keras_project",
+      "luigi_project",
+      "matplotlib_project",
+      "pandas_project",
+      "pysnooper_project",
+      "sanic_project",
+      "scrapy_project",
+      "spacy_project",
+      "thefuck_project",
+      "tornado_project",
+      "tqdm_project"
+    ],
+    "1": [
+      "ansible_verify",
+      "ansible_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_ansible_verify_sh__entry"
+    ],
+    "2": [
+      "cookiecutter_verify",
+      "cookiecutter_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_cookiecutter_verify_sh__entry"
+    ],
+    "3": [
+      "keras_verify",
+      "keras_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_keras_verify_sh__entry"
+    ],
+    "4": [
+      "matplotlib_verify",
+      "matplotlib_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_matplotlib_verify_sh__entry"
+    ],
+    "5": [
+      "pandas_verify",
+      "pandas_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_pandas_verify_sh__entry"
+    ],
+    "6": [
+      "pysnooper_verify",
+      "pysnooper_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_pysnooper_verify_sh__entry"
+    ],
+    "7": [
+      "sanic_verify",
+      "sanic_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_sanic_verify_sh__entry"
+    ],
+    "8": [
+      "scrapy_verify",
+      "scrapy_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_scrapy_verify_sh__entry"
+    ],
+    "9": [
+      "tqdm_verify",
+      "tqdm_verify_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_tqdm_verify_sh__entry"
+    ],
+    "10": [
+      "update_readme",
+      "update_readme_my_function",
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_update_readme_sh__entry"
+    ],
+    "11": [
+      "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_youtube_dl_verify_sh__entry",
+      "youtube_dl_verify",
+      "youtube_dl_verify_my_function"
+    ],
+    "12": [
+      "bugsinpy_checkout",
+      "youtube_dl_project"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08695652173913043,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "bugsinpy_readme",
+      "label": "BugsInPy README",
+      "degree": 24
+    },
+    {
+      "id": "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_pysnooper_verify_sh__entry",
+      "label": "verify.sh script",
+      "degree": 2
+    },
+    {
+      "id": "pysnooper_verify_my_function",
+      "label": "my_function()",
+      "degree": 2
+    },
+    {
+      "id": "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_ansible_verify_sh__entry",
+      "label": "verify.sh script",
+      "degree": 2
+    },
+    {
+      "id": "ansible_verify_my_function",
+      "label": "my_function()",
+      "degree": 2
+    },
+    {
+      "id": "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_cookiecutter_verify_sh__entry",
+      "label": "verify.sh script",
+      "degree": 2
+    },
+    {
+      "id": "cookiecutter_verify_my_function",
+      "label": "my_function()",
+      "degree": 2
+    },
+    {
+      "id": "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_keras_verify_sh__entry",
+      "label": "verify.sh script",
+      "degree": 2
+    },
+    {
+      "id": "keras_verify_my_function",
+      "label": "my_function()",
+      "degree": 2
+    },
+    {
+      "id": "users_amirmt_desktop_me_me_msc_computerscience_2025_b_agent_ai_hw4_data_bugsinpy_projects_matplotlib_verify_sh__entry",
+      "label": "verify.sh script",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "youtube-dl Project",
+      "target": "BugsInPy README",
+      "source_files": [
+        "projects/youtube-dl/youtube-dl-pass.txt",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities; peripheral node `youtube-dl Project` unexpectedly reaches hub `BugsInPy README`"
+    },
+    {
+      "source": "Ansible Project",
+      "target": "BugsInPy README",
+      "source_files": [
+        "projects/ansible/ansible-pass.txt",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Ansible Project` unexpectedly reaches hub `BugsInPy README`"
+    },
+    {
+      "source": "Black Project",
+      "target": "BugsInPy README",
+      "source_files": [
+        "projects/black/black-pass.txt",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Black Project` unexpectedly reaches hub `BugsInPy README`"
+    },
+    {
+      "source": "Cookiecutter Project",
+      "target": "BugsInPy README",
+      "source_files": [
+        "projects/cookiecutter/cookiecutter-pass.txt",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Cookiecutter Project` unexpectedly reaches hub `BugsInPy README`"
+    },
+    {
+      "source": "FastAPI Project",
+      "target": "BugsInPy README",
+      "source_files": [
+        "projects/fastapi/fastapi-pass.txt",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `FastAPI Project` unexpectedly reaches hub `BugsInPy README`"
+    }
+  ],
+  "tokens": {
+    "input": 45805,
+    "output": 3056
+  }
+}
