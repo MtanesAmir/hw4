@@ -1,0 +1,27 @@
+{
+  "mathsquiz/mathsquiz-step1.py": {
+    "mtime": 1781854914.831186,
+    "ast_hash": "ccb5672e6215d74f4b175cba073bf53b",
+    "semantic_hash": "ccb5672e6215d74f4b175cba073bf53b"
+  },
+  "mathsquiz/mathsquiz-step2.py": {
+    "mtime": 1781854914.8313413,
+    "ast_hash": "06c104051d5d3873bc86cbad2bd6854d",
+    "semantic_hash": "06c104051d5d3873bc86cbad2bd6854d"
+  },
+  "mathsquiz/mathsquiz-step3.py": {
+    "mtime": 1781854914.8315055,
+    "ast_hash": "f6a6cc8a2cccc1eef626c6ae142c9c43",
+    "semantic_hash": "f6a6cc8a2cccc1eef626c6ae142c9c43"
+  },
+  "mathsquiz/mathsquiz.py": {
+    "mtime": 1781854914.8316882,
+    "ast_hash": "3b6a99d5470f9f914b116e0aa99796df",
+    "semantic_hash": "3b6a99d5470f9f914b116e0aa99796df"
+  },
+  "polygons/polygons.py": {
+    "mtime": 1781854914.8318908,
+    "ast_hash": "ecb79ed56b4baf802ef36b9c605f7213",
+    "semantic_hash": "ecb79ed56b4baf802ef36b9c605f7213"
+  }
+}

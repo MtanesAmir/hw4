@@ -1,0 +1,117 @@
+{
+  "communities": {
+    "0": [
+      "license_mit_license",
+      "mathsquiz_mathsquiz",
+      "mathsquiz_mathsquiz_final_py",
+      "mathsquiz_readme_maths_quiz",
+      "readme_broken_python"
+    ],
+    "1": [
+      "polygons_polygons",
+      "polygons_polygons_draw_polygon",
+      "polygons_polygons_rationale_18",
+      "polygons_polygons_rationale_33",
+      "polygons_polygons_rationale_50"
+    ],
+    "2": [
+      "mathsquiz_mathsquiz_step2",
+      "mathsquiz_mathsquiz_step2_ask_question",
+      "mathsquiz_mathsquiz_step2_print_final_scores",
+      "mathsquiz_mathsquiz_step2_welcome_message"
+    ],
+    "3": [
+      "mathsquiz_mathsquiz_step3",
+      "mathsquiz_mathsquiz_step3_ask_question",
+      "mathsquiz_mathsquiz_step3_print_final_scores",
+      "mathsquiz_mathsquiz_step3_welcome_message"
+    ],
+    "4": [
+      "object",
+      "polygons_polygons_calc_polygon_details",
+      "polygons_polygons_polygon",
+      "polygons_polygons_polygon_init"
+    ],
+    "5": [
+      "mathsquiz_mathsquiz_step1"
+    ]
+  },
+  "cohesion": {
+    "0": 0.5,
+    "1": 0.4,
+    "2": 0.5,
+    "3": 0.5,
+    "4": 0.5,
+    "5": 1.0
+  },
+  "gods": [
+    {
+      "id": "polygons_polygons_polygon",
+      "label": "Polygon",
+      "degree": 4
+    },
+    {
+      "id": "mathsquiz_readme_maths_quiz",
+      "label": "Maths Quiz Project",
+      "degree": 3
+    },
+    {
+      "id": "polygons_polygons_calc_polygon_details",
+      "label": "calc_polygon_details()",
+      "degree": 2
+    },
+    {
+      "id": "readme_broken_python",
+      "label": "Broken Python Project",
+      "degree": 2
+    },
+    {
+      "id": "polygons_polygons_rationale_18",
+      "label": "# TODO: find a better way to work this stuff out",
+      "degree": 1
+    },
+    {
+      "id": "polygons_polygons_rationale_33",
+      "label": "# TODO: perhaps I should use the class Polygon instead!",
+      "degree": 1
+    },
+    {
+      "id": "polygons_polygons_rationale_50",
+      "label": "# TODO: make this work for any type of polygon",
+      "degree": 1
+    },
+    {
+      "id": "license_mit_license",
+      "label": "MIT License",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Maths Quiz Project",
+      "target": "Broken Python Project",
+      "source_files": [
+        "mathsquiz/README.md",
+        "README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "Broken Python Project",
+      "target": "MIT License",
+      "source_files": [
+        "README.md",
+        "LICENSE.txt"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    }
+  ],
+  "tokens": {
+    "input": 1334,
+    "output": 667
+  }
+}
