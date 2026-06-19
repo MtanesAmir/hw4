@@ -62,9 +62,9 @@ class BugsGraph:
             node_type = node.get('type')
             community = node.get('community', None)
             
-            meta = node.get('metadata', {})
-            source_file = meta.get('source_file', 'N/A')
-            location = meta.get('location', 'N/A')
+            meta = node.get('metadata') or {}
+            source_file = node.get('source_file') or meta.get('source_file', 'N/A')
+            location = node.get('source_location') or node.get('location') or meta.get('location') or meta.get('source_location', 'N/A')
             
             clean_label = re.sub(r'_\d+$', '', label)
             vault_name = self.vault_mapping.get((clean_label, source_file, location), label)

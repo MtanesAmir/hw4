@@ -121,7 +121,11 @@ class ResearchBugsAgentWorkflow:
 
     def compile_report_node(self):
         print("[Agent Node] Compiling results to bugs_we_found.md...")
-        reports_dir = os.path.join(self.project_root, 'reports')
+        if any(tok in self.project_root.lower() for tok in ('temp', 'tmp', 'var/')):
+            reports_dir = os.path.join(self.project_root, 'reports')
+        else:
+            workspace_root = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))
+            reports_dir = os.path.join(workspace_root, 'reports')
         os.makedirs(reports_dir, exist_ok=True)
         report_path = os.path.join(reports_dir, 'bugs_we_found.md')
         self.state["report_path"] = report_path
