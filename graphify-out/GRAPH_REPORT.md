@@ -1,16 +1,16 @@
 # Graph Report - hw4  (2026-06-19)
 
 ## Corpus Check
-- 895 files · ~185,790 words
+- 895 files · ~185,827 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1928 nodes · 1192 edges · 857 communities (32 shown, 825 thin omitted)
+- 1919 nodes · 1184 edges · 858 communities (32 shown, 826 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 6 edges (avg confidence: 0.55)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `530d1c90`
+- Built from commit: `321d5e20`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -189,6 +189,7 @@
 - [[_COMMUNITY_Community 171|Community 171]]
 - [[_COMMUNITY_Community 172|Community 172]]
 - [[_COMMUNITY_Community 173|Community 173]]
+- [[_COMMUNITY_Community 174|Community 174]]
 - [[_COMMUNITY_Community 175|Community 175]]
 - [[_COMMUNITY_Community 176|Community 176]]
 - [[_COMMUNITY_Community 177|Community 177]]
@@ -207,7 +208,6 @@
 - [[_COMMUNITY_Community 190|Community 190]]
 - [[_COMMUNITY_Community 191|Community 191]]
 - [[_COMMUNITY_Community 192|Community 192]]
-- [[_COMMUNITY_Community 193|Community 193]]
 - [[_COMMUNITY_Community 194|Community 194]]
 - [[_COMMUNITY_Community 195|Community 195]]
 - [[_COMMUNITY_Community 196|Community 196]]
@@ -839,9 +839,12 @@
 - [[_COMMUNITY_Community 822|Community 822]]
 - [[_COMMUNITY_Community 823|Community 823]]
 - [[_COMMUNITY_Community 824|Community 824]]
+- [[_COMMUNITY_Community 825|Community 825]]
+- [[_COMMUNITY_Community 826|Community 826]]
 - [[_COMMUNITY_Community 827|Community 827]]
 - [[_COMMUNITY_Community 828|Community 828]]
 - [[_COMMUNITY_Community 829|Community 829]]
+- [[_COMMUNITY_Community 830|Community 830]]
 - [[_COMMUNITY_Community 831|Community 831]]
 - [[_COMMUNITY_Community 832|Community 832]]
 - [[_COMMUNITY_Community 833|Community 833]]
@@ -850,9 +853,11 @@
 - [[_COMMUNITY_Community 836|Community 836]]
 - [[_COMMUNITY_Community 837|Community 837]]
 - [[_COMMUNITY_Community 838|Community 838]]
+- [[_COMMUNITY_Community 839|Community 839]]
 - [[_COMMUNITY_Community 840|Community 840]]
 - [[_COMMUNITY_Community 841|Community 841]]
 - [[_COMMUNITY_Community 842|Community 842]]
+- [[_COMMUNITY_Community 843|Community 843]]
 - [[_COMMUNITY_Community 844|Community 844]]
 - [[_COMMUNITY_Community 845|Community 845]]
 - [[_COMMUNITY_Community 846|Community 846]]
@@ -860,10 +865,6 @@
 - [[_COMMUNITY_Community 848|Community 848]]
 - [[_COMMUNITY_Community 849|Community 849]]
 - [[_COMMUNITY_Community 850|Community 850]]
-- [[_COMMUNITY_Community 852|Community 852]]
-- [[_COMMUNITY_Community 853|Community 853]]
-- [[_COMMUNITY_Community 854|Community 854]]
-- [[_COMMUNITY_Community 855|Community 855]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BugsGraph` - 15 edges
@@ -879,134 +880,134 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `TestAgent` --uses--> `ResearchBugsAgentWorkflow`  [INFERRED]
-  tests/test_agent.py → src/agent/workflow.py
+  tests/test_agent.py → src/main/agent/workflow.py
 - `TestBugs` --uses--> `BugsGraph`  [INFERRED]
-  tests/test_bugs.py → src/bugs/graph_loader.py
+  tests/test_bugs.py → src/main/bugs/graph_loader.py
 - `TestAnalyzer` --uses--> `KnowledgeGraph`  [INFERRED]
-  tests/test_analyzer.py → src/centrality/graph.py
+  tests/test_analyzer.py → src/main/centrality/graph.py
 - `TestReverseEngineer` --uses--> `ASTScanner`  [INFERRED]
-  tests/test_reverse_engineer.py → src/reverse_engineer/ast_scanner.py
+  tests/test_reverse_engineer.py → src/main/reverse_engineer/ast_scanner.py
 - `main()` --calls--> `ResearchBugsAgentWorkflow`  [EXTRACTED]
-  src/agent/cli.py → src/agent/workflow.py
+  src/main/agent/cli.py → src/main/agent/workflow.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (857 total, 825 thin omitted)
+## Communities (858 total, 826 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (22): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+14 more)
-
-### Community 1 - "Community 1"
-Cohesion: 0.33
-Nodes (5): BugsInPy, BugsInPy Command, Example BugsInPy Command, Steps to set up BugsInPy, Use Docker
-
-### Community 2 - "Community 2"
-Cohesion: 0.40
-Nodes (4): Implementation Plan, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
-
-### Community 3 - "Community 3"
-Cohesion: 0.40
-Nodes (4): Objectives, Overview, Product Requirements Document (PRD), Requirements
-
-### Community 4 - "Community 4"
-Cohesion: 0.40
-Nodes (4): Implementation Plan, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
-
-### Community 5 - "Community 5"
-Cohesion: 0.40
-Nodes (4): Objectives, Overview, Product Requirements Document (PRD), Requirements
-
-### Community 827 - "Community 827"
-Cohesion: 0.40
-Nodes (4): Implementation Plan - Hubs Analysis, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
-
-### Community 828 - "Community 828"
-Cohesion: 0.40
-Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Hubs Analysis, Requirements
-
-### Community 831 - "Community 831"
 Cohesion: 0.08
 Nodes (20): main(), ResearchBugsAgentWorkflow, main(), analyze_file_content(), check_god_class(), check_infinite_waiting(), check_local_state_dependency(), check_tight_coupling() (+12 more)
 
-### Community 832 - "Community 832"
-Cohesion: 0.18
-Nodes (8): main(), map_bugs_to_suggestions(), Translates parsed categories of architectural bugs to a list of suggestions, parse_bugs_report(), Parses the Bugs.md report and returns a dict mapping bug categories (1-5) to a l, generate_suggestions_report(), Builds the Suggestions.md report table mapping defects to Solution Architecture, TestSuggestions
+### Community 1 - "Community 1"
+Cohesion: 0.09
+Nodes (15): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+7 more)
 
-### Community 833 - "Community 833"
-Cohesion: 0.40
-Nodes (4): Implementation Plan - Bridges Analysis, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
-
-### Community 834 - "Community 834"
-Cohesion: 0.40
-Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Bridges Analysis, Requirements
-
-### Community 835 - "Community 835"
-Cohesion: 0.40
-Nodes (4): Implementation Plan - Architectural Bugs Detection, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
-
-### Community 836 - "Community 836"
-Cohesion: 0.40
-Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Architectural Bugs Detection, Requirements
-
-### Community 840 - "Community 840"
-Cohesion: 0.40
-Nodes (4): Implementation Plan - Architectural Improvement Suggestions, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
-
-### Community 841 - "Community 841"
-Cohesion: 0.40
-Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Architectural Improvement Suggestions, Requirements
-
-### Community 844 - "Community 844"
+### Community 2 - "Community 2"
 Cohesion: 0.16
 Nodes (9): ASTScanner, main(), generate_block_diagram(), generate_oop_diagram(), Groups modules by top-level package and creates cross-package flowchart links., Constructs class definitions, methods, inheritance, and compositions in Mermaid, Assembles the block diagram, OOP schema, and textual descriptions into a markdow, write_reverse_engineer_report() (+1 more)
 
-### Community 845 - "Community 845"
+### Community 3 - "Community 3"
+Cohesion: 0.18
+Nodes (7): calculate_betweenness_centrality(), Calculates Betweenness Centrality for all nodes in the graph using Brandes' algo, main(), HubsGraph, generate_hubs_report(), Generates the Hubs.md report listing ranked bottleneck nodes., TestHubs
+
+### Community 4 - "Community 4"
+Cohesion: 0.18
+Nodes (8): main(), map_bugs_to_suggestions(), Translates parsed categories of architectural bugs to a list of suggestions, parse_bugs_report(), Parses the Bugs.md report and returns a dict mapping bug categories (1-5) to a l, generate_suggestions_report(), Builds the Suggestions.md report table mapping defects to Solution Architecture, TestSuggestions
+
+### Community 5 - "Community 5"
+Cohesion: 0.33
+Nodes (5): BugsInPy, BugsInPy Command, Example BugsInPy Command, Steps to set up BugsInPy, Use Docker
+
+### Community 6 - "Community 6"
 Cohesion: 0.33
 Nodes (5): 1. Central Nodes (Degree Centrality - Subject 8), 2. Hubs (Betweenness Centrality - Subject 10), 3. Bridge Nodes (Cross-Community Links), 4. Architectural Bugs and Anti-Patterns Found, Architectural Analysis and Bugs Found
 
-### Community 846 - "Community 846"
+### Community 7 - "Community 7"
+Cohesion: 0.40
+Nodes (4): Implementation Plan - Bridges Analysis, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 8 - "Community 8"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Bridges Analysis, Requirements
+
+### Community 9 - "Community 9"
+Cohesion: 0.40
+Nodes (4): Implementation Plan - Architectural Bugs Detection, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 10 - "Community 10"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Architectural Bugs Detection, Requirements
+
+### Community 11 - "Community 11"
+Cohesion: 0.40
+Nodes (4): Implementation Plan, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 12 - "Community 12"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD), Requirements
+
+### Community 13 - "Community 13"
+Cohesion: 0.40
+Nodes (4): Implementation Plan - Hubs Analysis, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 14 - "Community 14"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Hubs Analysis, Requirements
+
+### Community 15 - "Community 15"
 Cohesion: 0.40
 Nodes (4): Implementation Plan - Research Bugs Agent, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
 
-### Community 847 - "Community 847"
+### Community 16 - "Community 16"
 Cohesion: 0.40
 Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Research Bugs Agent, Requirements
 
-### Community 848 - "Community 848"
-Cohesion: 0.40
-Nodes (4): Autonomous Research Agent (`run_agent.py`), Codebase Architecture Analysis & Research Agent, Features, Usage
-
-### Community 852 - "Community 852"
-Cohesion: 0.18
-Nodes (10): 1. Architectural Block Diagram, 2. Object-Oriented (OOP) Class Schema, Block Explanation, Class: `ASTScanner`, Class: `BugsGraph`, Class: `HubsGraph`, Class: `KnowledgeGraph`, Class Relationships and Explanations (+2 more)
-
-### Community 853 - "Community 853"
+### Community 17 - "Community 17"
 Cohesion: 0.40
 Nodes (4): Implementation Plan - Reverse Engineering Agent, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
 
-### Community 854 - "Community 854"
+### Community 18 - "Community 18"
 Cohesion: 0.40
 Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Reverse Engineering Agent, Requirements
 
+### Community 19 - "Community 19"
+Cohesion: 0.40
+Nodes (4): Implementation Plan - Architectural Improvement Suggestions, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 20 - "Community 20"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Architectural Improvement Suggestions, Requirements
+
+### Community 21 - "Community 21"
+Cohesion: 0.40
+Nodes (4): Implementation Plan, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 22 - "Community 22"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD), Requirements
+
+### Community 23 - "Community 23"
+Cohesion: 0.40
+Nodes (4): Autonomous Research Agent (`run_agent.py`), Codebase Architecture Analysis & Research Agent, Features, Usage
+
 ## Knowledge Gaps
-- **879 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+874 more)
+- **874 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+869 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **825 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **826 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `calculate_betweenness_centrality()` connect `Community 0` to `Community 831`?**
+- **Why does `calculate_betweenness_centrality()` connect `Community 3` to `Community 0`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `BugsGraph` (e.g. with `ResearchBugsAgentWorkflow` and `TestBugs`) actually correct?**
   _`BugsGraph` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `ResearchBugsAgentWorkflow` (e.g. with `BugsGraph` and `TestAgent`) actually correct?**
   _`ResearchBugsAgentWorkflow` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `run_test.sh script`, `setup.sh script`, `run_test.sh script` to the rest of the system?**
-  _900 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _895 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05974025974025974 - nodes in this community are weakly interconnected._
-- **Should `Community 831` be split into smaller, more focused modules?**
   _Cohesion score 0.07541478129713423 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.09365079365079365 - nodes in this community are weakly interconnected._

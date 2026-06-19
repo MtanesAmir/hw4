@@ -37,7 +37,7 @@ class TestAgent(unittest.TestCase):
         workflow.run()
         
         # Verify report generation
-        report_path = os.path.join(self.test_dir, "result", "bugs_we_found.md")
+        report_path = os.path.join(self.test_dir, "reports", "bugs_we_found.md")
         self.assertTrue(os.path.exists(report_path))
         
         # Check content
