@@ -26,7 +26,7 @@ def calc_polygon_details(sides):
         internal_angles_sum = 1000
         internal_angles = 200
 
-    poly = new Polygon(sides, internal_angles_sum, internal_angles)
+    poly = Polygon(sides, internal_angles_sum, internal_angles)
     print(poly)
 
     # return a dictionary containing info about the polygon

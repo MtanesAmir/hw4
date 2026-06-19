@@ -7,7 +7,8 @@ from bugs.evaluators import (
     check_god_class,
     check_local_state_dependency,
     check_unbounded_retries,
-    check_infinite_waiting
+    check_infinite_waiting,
+    check_syntax_errors
 )
 
 class ResearchBugsAgentWorkflow:
@@ -104,6 +105,7 @@ class ResearchBugsAgentWorkflow:
         ls = check_local_state_dependency(graph, self.project_root)
         ur = check_unbounded_retries(graph, self.project_root)
         iw = check_infinite_waiting(graph, self.project_root)
+        se = check_syntax_errors(graph, self.project_root)
         
         all_bugs = []
         for v in tc:
@@ -116,6 +118,8 @@ class ResearchBugsAgentWorkflow:
             all_bugs.append({**v, 'type': 'Unbounded Retries (Thundering Herd)'})
         for v in iw:
             all_bugs.append({**v, 'type': 'Infinite Resource Waiting'})
+        for v in se:
+            all_bugs.append({**v, 'type': 'Syntax/Compilation Error'})
             
         self.state["bugs"] = all_bugs
 

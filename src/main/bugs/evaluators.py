@@ -189,3 +189,36 @@ def check_infinite_waiting(graph, project_root):
                     'fix': "Always enforce bounded timeouts (e.g., timeout=5) for network or database requests."
                 })
     return violations
+
+def check_syntax_errors(graph, project_root):
+    """
+    Checks for compilation and syntax errors inside files.
+    """
+    violations = []
+    seen_files = set()
+    for node_name, node_info in graph.nodes.items():
+        src_file = node_info.get('source_file')
+        if not src_file or src_file == 'N/A':
+            continue
+            
+        full_path = os.path.join(project_root, src_file)
+        if full_path in seen_files:
+            continue
+        seen_files.add(full_path)
+        
+        content = analyze_file_content(full_path)
+        if content is None:
+            continue
+            
+        try:
+            import ast
+            ast.parse(content, filename=full_path)
+        except SyntaxError as e:
+            violations.append({
+                'node': node_name,
+                'file': src_file,
+                'location': f"L{e.lineno}",
+                'details': f"Syntax Error: {e.msg}",
+                'fix': f"Fix Python syntax error"
+            })
+    return violations
