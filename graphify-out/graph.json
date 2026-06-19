@@ -22884,8 +22884,148 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_analyzer_py_hubs_analyzer",
-      "community": 0,
+      "community": 844,
       "norm_label": "hubs_analyzer.py"
+    },
+    {
+      "label": "run_agent.py",
+      "file_type": "code",
+      "source_file": "run_agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "run_agent",
+      "community": 831,
+      "norm_label": "run_agent.py"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/agent/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agent_init",
+      "community": 851,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": "src/agent/cli.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agent_cli",
+      "community": 831,
+      "norm_label": "cli.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/agent/cli.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "agent_cli_main",
+      "community": 831,
+      "norm_label": "main()"
+    },
+    {
+      "label": "workflow.py",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agent_workflow",
+      "community": 831,
+      "norm_label": "workflow.py"
+    },
+    {
+      "label": "ResearchBugsAgentWorkflow",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow",
+      "community": 831,
+      "norm_label": "researchbugsagentworkflow"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_init",
+      "community": 831,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_run",
+      "community": 831,
+      "norm_label": ".run()"
+    },
+    {
+      "label": ".load_graph_node()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_load_graph_node",
+      "community": 831,
+      "norm_label": ".load_graph_node()"
+    },
+    {
+      "label": ".centrality_node()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_centrality_node",
+      "community": 831,
+      "norm_label": ".centrality_node()"
+    },
+    {
+      "label": ".hubs_node()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_hubs_node",
+      "community": 831,
+      "norm_label": ".hubs_node()"
+    },
+    {
+      "label": ".bridges_node()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_bridges_node",
+      "community": 831,
+      "norm_label": ".bridges_node()"
+    },
+    {
+      "label": ".bugs_node()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "community": 831,
+      "norm_label": ".bugs_node()"
+    },
+    {
+      "label": ".compile_report_node()",
+      "file_type": "code",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "agent_workflow_researchbugsagentworkflow_compile_report_node",
+      "community": 831,
+      "norm_label": ".compile_report_node()"
     },
     {
       "label": "__init__.py",
@@ -23404,7 +23544,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hubs_analyzer_py_hubs_analyzer",
-      "community": 0,
+      "community": 844,
       "norm_label": "analyzer.py"
     },
     {
@@ -23414,7 +23554,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_analyzer_calculate_betweenness_centrality",
-      "community": 0,
+      "community": 844,
       "norm_label": "calculate_betweenness_centrality()"
     },
     {
@@ -23424,7 +23564,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "hubs_analyzer_rationale_2",
-      "community": 0,
+      "community": 844,
       "norm_label": "calculates betweenness centrality for all nodes in the graph using brandes' algo"
     },
     {
@@ -23434,7 +23574,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_cli",
-      "community": 0,
+      "community": 844,
       "norm_label": "cli.py"
     },
     {
@@ -23444,7 +23584,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hubs_cli_main",
-      "community": 0,
+      "community": 844,
       "norm_label": "main()"
     },
     {
@@ -23454,7 +23594,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_graph",
-      "community": 0,
+      "community": 844,
       "norm_label": "graph.py"
     },
     {
@@ -23464,7 +23604,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph",
-      "community": 0,
+      "community": 844,
       "norm_label": "hubsgraph"
     },
     {
@@ -23474,7 +23614,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_init",
-      "community": 0,
+      "community": 844,
       "norm_label": ".__init__()"
     },
     {
@@ -23484,7 +23624,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_add_node",
-      "community": 0,
+      "community": 844,
       "norm_label": ".add_node()"
     },
     {
@@ -23494,7 +23634,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_add_edge",
-      "community": 0,
+      "community": 844,
       "norm_label": ".add_edge()"
     },
     {
@@ -23504,7 +23644,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_build_vault_mapping",
-      "community": 0,
+      "community": 844,
       "norm_label": ".build_vault_mapping()"
     },
     {
@@ -23514,7 +23654,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_load_from_json",
-      "community": 0,
+      "community": 844,
       "norm_label": ".load_from_json()"
     },
     {
@@ -23524,7 +23664,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_reporter",
-      "community": 0,
+      "community": 844,
       "norm_label": "reporter.py"
     },
     {
@@ -23534,7 +23674,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "hubs_reporter_generate_hubs_report",
-      "community": 0,
+      "community": 844,
       "norm_label": "generate_hubs_report()"
     },
     {
@@ -23544,7 +23684,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "hubs_reporter_rationale_5",
-      "community": 0,
+      "community": 844,
       "norm_label": "generates the hubs.md report listing ranked bottleneck nodes."
     },
     {
@@ -23686,6 +23826,56 @@
       "id": "tests_init",
       "community": 826,
       "norm_label": "__init__.py"
+    },
+    {
+      "label": "test_agent.py",
+      "file_type": "code",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_agent",
+      "community": 831,
+      "norm_label": "test_agent.py"
+    },
+    {
+      "label": "TestAgent",
+      "file_type": "code",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tests_test_agent_testagent",
+      "community": 831,
+      "norm_label": "testagent"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tests_test_agent_testagent_setup",
+      "community": 831,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".tearDown()",
+      "file_type": "code",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tests_test_agent_testagent_teardown",
+      "community": 831,
+      "norm_label": ".teardown()"
+    },
+    {
+      "label": ".test_agent_workflow_execution()",
+      "file_type": "code",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tests_test_agent_testagent_test_agent_workflow_execution",
+      "community": 831,
+      "norm_label": ".test_agent_workflow_execution()"
     },
     {
       "label": "test_analyzer.py",
@@ -23894,7 +24084,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_hubs",
-      "community": 0,
+      "community": 844,
       "norm_label": "test_hubs.py"
     },
     {
@@ -23904,7 +24094,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs",
-      "community": 0,
+      "community": 844,
       "norm_label": "testhubs"
     },
     {
@@ -23914,7 +24104,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs_test_star_graph_betweenness",
-      "community": 0,
+      "community": 844,
       "norm_label": ".test_star_graph_betweenness()"
     },
     {
@@ -23924,7 +24114,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs_test_path_graph_betweenness",
-      "community": 0,
+      "community": 844,
       "norm_label": ".test_path_graph_betweenness()"
     },
     {
@@ -24140,6 +24330,56 @@
     {
       "label": "README.md",
       "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme",
+      "community": 848,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Codebase Architecture Analysis & Research Agent",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "readme_codebase_architecture_analysis_research_agent",
+      "community": 848,
+      "norm_label": "codebase architecture analysis & research agent"
+    },
+    {
+      "label": "Features",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "readme_features",
+      "community": 848,
+      "norm_label": "features"
+    },
+    {
+      "label": "Autonomous Research Agent (`run_agent.py`)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "readme_autonomous_research_agent_run_agent_py",
+      "community": 848,
+      "norm_label": "autonomous research agent (`run_agent.py`)"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "readme_usage",
+      "community": 848,
+      "norm_label": "usage"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
       "source_file": "data/BugsInPy/README.md",
       "source_location": "L1",
       "_origin": "ast",
@@ -24196,6 +24436,66 @@
       "id": "bugsinpy_readme_example_bugsinpy_command",
       "community": 1,
       "norm_label": "example bugsinpy command"
+    },
+    {
+      "label": "bugs_we_found.md",
+      "file_type": "document",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "result_bugs_we_found",
+      "community": 845,
+      "norm_label": "bugs_we_found.md"
+    },
+    {
+      "label": "Architectural Analysis and Bugs Found",
+      "file_type": "document",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "result_bugs_we_found_architectural_analysis_and_bugs_found",
+      "community": 845,
+      "norm_label": "architectural analysis and bugs found"
+    },
+    {
+      "label": "1. Central Nodes (Degree Centrality - Subject 8)",
+      "file_type": "document",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "result_bugs_we_found_1_central_nodes_degree_centrality_subject_8",
+      "community": 845,
+      "norm_label": "1. central nodes (degree centrality - subject 8)"
+    },
+    {
+      "label": "2. Hubs (Betweenness Centrality - Subject 10)",
+      "file_type": "document",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "result_bugs_we_found_2_hubs_betweenness_centrality_subject_10",
+      "community": 845,
+      "norm_label": "2. hubs (betweenness centrality - subject 10)"
+    },
+    {
+      "label": "3. Bridge Nodes (Cross-Community Links)",
+      "file_type": "document",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "result_bugs_we_found_3_bridge_nodes_cross_community_links",
+      "community": 845,
+      "norm_label": "3. bridge nodes (cross-community links)"
+    },
+    {
+      "label": "4. Architectural Bugs and Anti-Patterns Found",
+      "file_type": "document",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "result_bugs_we_found_4_architectural_bugs_and_anti_patterns_found",
+      "community": 845,
+      "norm_label": "4. architectural bugs and anti-patterns found"
     },
     {
       "label": "Bridges_plan.md",
@@ -24678,6 +24978,126 @@
       "norm_label": "todo list - hubs analysis"
     },
     {
+      "label": "Research_bugs_agent_plan.md",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_plan",
+      "community": 846,
+      "norm_label": "research_bugs_agent_plan.md"
+    },
+    {
+      "label": "Implementation Plan - Research Bugs Agent",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
+      "community": 846,
+      "norm_label": "implementation plan - research bugs agent"
+    },
+    {
+      "label": "Phase 1: Setup",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_plan_phase_1_setup",
+      "community": 846,
+      "norm_label": "phase 1: setup"
+    },
+    {
+      "label": "Phase 2: Development",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_plan_phase_2_development",
+      "community": 846,
+      "norm_label": "phase 2: development"
+    },
+    {
+      "label": "Phase 3: Verification",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_plan_phase_3_verification",
+      "community": 846,
+      "norm_label": "phase 3: verification"
+    },
+    {
+      "label": "Research_bugs_agent_prd.md",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_prd",
+      "community": 847,
+      "norm_label": "research_bugs_agent_prd.md"
+    },
+    {
+      "label": "Product Requirements Document (PRD) - Research Bugs Agent",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
+      "community": 847,
+      "norm_label": "product requirements document (prd) - research bugs agent"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_prd_overview",
+      "community": 847,
+      "norm_label": "overview"
+    },
+    {
+      "label": "Objectives",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_prd_objectives",
+      "community": 847,
+      "norm_label": "objectives"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_prd_requirements",
+      "community": 847,
+      "norm_label": "requirements"
+    },
+    {
+      "label": "Research_bugs_agent_todo.md",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_todo",
+      "community": 849,
+      "norm_label": "research_bugs_agent_todo.md"
+    },
+    {
+      "label": "Todo List - Research Bugs Agent",
+      "file_type": "document",
+      "source_file": "docs/Research_bugs_agent_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_bugs_agent_todo_todo_list_research_bugs_agent",
+      "community": 849,
+      "norm_label": "todo list - research bugs agent"
+    },
+    {
       "label": "Suggestions_plan.md",
       "file_type": "document",
       "source_file": "docs/Suggestions_plan.md",
@@ -24916,6 +25336,26 @@
       "id": "instructions_todo_todo_list",
       "community": 822,
       "norm_label": "todo list"
+    },
+    {
+      "label": "research_question.md",
+      "file_type": "document",
+      "source_file": "docs/research_question.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_question",
+      "community": 850,
+      "norm_label": "research_question.md"
+    },
+    {
+      "label": "Research Questions",
+      "file_type": "document",
+      "source_file": "docs/research_question.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_research_question_research_questions",
+      "community": 850,
+      "norm_label": "research questions"
     }
   ],
   "links": [
@@ -33294,6 +33734,357 @@
       "target": "hubs_cli"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "run_agent.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "run_agent",
+      "target": "agent_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/cli.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "agent_cli",
+      "target": "agent_cli_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/cli.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "agent_cli",
+      "target": "agent_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/cli.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "agent_cli",
+      "target": "agent_workflow_researchbugsagentworkflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/cli.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "agent_cli_main",
+      "target": "agent_workflow_researchbugsagentworkflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "agent_workflow",
+      "target": "agent_workflow_researchbugsagentworkflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "agent_workflow",
+      "target": "bugs_evaluators",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "agent_workflow",
+      "target": "bugs_graph_loader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_test_agent",
+      "target": "agent_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_bridges_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_centrality_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_compile_report_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_hubs_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_load_graph_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "agent_workflow_researchbugsagentworkflow_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L3",
+      "weight": 0.8,
+      "source": "agent_workflow_researchbugsagentworkflow",
+      "target": "bugs_graph_loader_bugsgraph",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L6",
+      "weight": 0.8,
+      "source": "tests_test_agent_testagent",
+      "target": "agent_workflow_researchbugsagentworkflow",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_agent.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "tests_test_agent_testagent_test_agent_workflow_execution",
+      "target": "agent_workflow_researchbugsagentworkflow"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_run",
+      "target": "agent_workflow_researchbugsagentworkflow_bridges_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_run",
+      "target": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_run",
+      "target": "agent_workflow_researchbugsagentworkflow_centrality_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_run",
+      "target": "agent_workflow_researchbugsagentworkflow_compile_report_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_run",
+      "target": "agent_workflow_researchbugsagentworkflow_hubs_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_run",
+      "target": "agent_workflow_researchbugsagentworkflow_load_graph_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_load_graph_node",
+      "target": "bugs_graph_loader_bugsgraph"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_hubs_node",
+      "target": "hubs_analyzer_calculate_betweenness_centrality"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "target": "bugs_evaluators_check_god_class"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "target": "bugs_evaluators_check_infinite_waiting"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "target": "bugs_evaluators_check_local_state_dependency"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "target": "bugs_evaluators_check_tight_coupling"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/agent/workflow.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "agent_workflow_researchbugsagentworkflow_bugs_node",
+      "target": "bugs_evaluators_check_unbounded_retries"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/bugs/cli.py",
@@ -34709,9 +35500,9 @@
       "source_file": "src/suggestions/cli.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_cli",
-      "target": "suggestions_cli_main",
-      "confidence_score": 1.0
+      "target": "suggestions_cli_main"
     },
     {
       "relation": "imports_from",
@@ -34720,9 +35511,9 @@
       "source_file": "src/suggestions/cli.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_cli",
-      "target": "suggestions_parser",
-      "confidence_score": 1.0
+      "target": "suggestions_parser"
     },
     {
       "relation": "imports",
@@ -34731,9 +35522,9 @@
       "source_file": "src/suggestions/cli.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_cli",
-      "target": "suggestions_parser_parse_bugs_report",
-      "confidence_score": 1.0
+      "target": "suggestions_parser_parse_bugs_report"
     },
     {
       "relation": "imports_from",
@@ -34742,9 +35533,9 @@
       "source_file": "src/suggestions/cli.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_cli",
-      "target": "suggestions_reporter",
-      "confidence_score": 1.0
+      "target": "suggestions_reporter"
     },
     {
       "relation": "imports",
@@ -34753,9 +35544,9 @@
       "source_file": "src/suggestions/cli.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_cli",
-      "target": "suggestions_reporter_generate_suggestions_report",
-      "confidence_score": 1.0
+      "target": "suggestions_reporter_generate_suggestions_report"
     },
     {
       "relation": "imports_from",
@@ -34764,9 +35555,9 @@
       "source_file": "suggestions_generator.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_generator",
-      "target": "suggestions_cli",
-      "confidence_score": 1.0
+      "target": "suggestions_cli"
     },
     {
       "relation": "calls",
@@ -34775,9 +35566,9 @@
       "source_file": "src/suggestions/cli.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_cli_main",
-      "target": "suggestions_parser_parse_bugs_report",
-      "confidence_score": 1.0
+      "target": "suggestions_parser_parse_bugs_report"
     },
     {
       "relation": "calls",
@@ -34786,9 +35577,9 @@
       "source_file": "src/suggestions/cli.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_cli_main",
-      "target": "suggestions_reporter_generate_suggestions_report",
-      "confidence_score": 1.0
+      "target": "suggestions_reporter_generate_suggestions_report"
     },
     {
       "relation": "contains",
@@ -34796,9 +35587,9 @@
       "source_file": "src/suggestions/mapper.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_mapper",
-      "target": "suggestions_mapper_map_bugs_to_suggestions",
-      "confidence_score": 1.0
+      "target": "suggestions_mapper_map_bugs_to_suggestions"
     },
     {
       "relation": "imports_from",
@@ -34807,9 +35598,9 @@
       "source_file": "src/suggestions/reporter.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_reporter",
-      "target": "suggestions_mapper",
-      "confidence_score": 1.0
+      "target": "suggestions_mapper"
     },
     {
       "relation": "imports_from",
@@ -34818,9 +35609,9 @@
       "source_file": "tests/test_suggestions.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_suggestions",
-      "target": "suggestions_mapper",
-      "confidence_score": 1.0
+      "target": "suggestions_mapper"
     },
     {
       "relation": "rationale_for",
@@ -34828,9 +35619,9 @@
       "source_file": "src/suggestions/mapper.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_mapper_rationale_2",
-      "target": "suggestions_mapper_map_bugs_to_suggestions",
-      "confidence_score": 1.0
+      "target": "suggestions_mapper_map_bugs_to_suggestions"
     },
     {
       "relation": "imports",
@@ -34839,9 +35630,9 @@
       "source_file": "src/suggestions/reporter.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_reporter",
-      "target": "suggestions_mapper_map_bugs_to_suggestions",
-      "confidence_score": 1.0
+      "target": "suggestions_mapper_map_bugs_to_suggestions"
     },
     {
       "relation": "calls",
@@ -34850,9 +35641,9 @@
       "source_file": "src/suggestions/reporter.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_reporter_generate_suggestions_report",
-      "target": "suggestions_mapper_map_bugs_to_suggestions",
-      "confidence_score": 1.0
+      "target": "suggestions_mapper_map_bugs_to_suggestions"
     },
     {
       "relation": "calls",
@@ -34871,9 +35662,9 @@
       "source_file": "src/suggestions/parser.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_parser",
-      "target": "suggestions_parser_parse_bugs_report",
-      "confidence_score": 1.0
+      "target": "suggestions_parser_parse_bugs_report"
     },
     {
       "relation": "imports_from",
@@ -34882,9 +35673,9 @@
       "source_file": "tests/test_suggestions.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_suggestions",
-      "target": "suggestions_parser",
-      "confidence_score": 1.0
+      "target": "suggestions_parser"
     },
     {
       "relation": "rationale_for",
@@ -34892,9 +35683,9 @@
       "source_file": "src/suggestions/parser.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_parser_rationale_5",
-      "target": "suggestions_parser_parse_bugs_report",
-      "confidence_score": 1.0
+      "target": "suggestions_parser_parse_bugs_report"
     },
     {
       "relation": "calls",
@@ -34913,9 +35704,9 @@
       "source_file": "src/suggestions/reporter.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_reporter",
-      "target": "suggestions_reporter_generate_suggestions_report",
-      "confidence_score": 1.0
+      "target": "suggestions_reporter_generate_suggestions_report"
     },
     {
       "relation": "rationale_for",
@@ -34923,8 +35714,48 @@
       "source_file": "src/suggestions/reporter.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "suggestions_reporter_rationale_5",
-      "target": "suggestions_reporter_generate_suggestions_report",
+      "target": "suggestions_reporter_generate_suggestions_report"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_agent",
+      "target": "tests_test_agent_testagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_test_agent_testagent",
+      "target": "tests_test_agent_testagent_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_test_agent_testagent",
+      "target": "tests_test_agent_testagent_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_agent.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_test_agent_testagent",
+      "target": "tests_test_agent_testagent_test_agent_workflow_execution",
       "confidence_score": 1.0
     },
     {
@@ -35133,9 +35964,9 @@
       "source_file": "tests/test_suggestions.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_suggestions",
-      "target": "tests_test_suggestions_testsuggestions",
-      "confidence_score": 1.0
+      "target": "tests_test_suggestions_testsuggestions"
     },
     {
       "relation": "method",
@@ -35143,9 +35974,9 @@
       "source_file": "tests/test_suggestions.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_suggestions_testsuggestions",
-      "target": "tests_test_suggestions_testsuggestions_setup",
-      "confidence_score": 1.0
+      "target": "tests_test_suggestions_testsuggestions_setup"
     },
     {
       "relation": "method",
@@ -35153,9 +35984,9 @@
       "source_file": "tests/test_suggestions.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_suggestions_testsuggestions",
-      "target": "tests_test_suggestions_testsuggestions_teardown",
-      "confidence_score": 1.0
+      "target": "tests_test_suggestions_testsuggestions_teardown"
     },
     {
       "relation": "method",
@@ -35163,9 +35994,9 @@
       "source_file": "tests/test_suggestions.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_suggestions_testsuggestions",
-      "target": "tests_test_suggestions_testsuggestions_test_parser_and_mapper",
-      "confidence_score": 1.0
+      "target": "tests_test_suggestions_testsuggestions_test_parser_and_mapper"
     },
     {
       "relation": "contains",
@@ -35270,6 +36101,46 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "readme_codebase_architecture_analysis_research_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "readme_codebase_architecture_analysis_research_agent",
+      "target": "readme_autonomous_research_agent_run_agent_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "readme_codebase_architecture_analysis_research_agent",
+      "target": "readme_features",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "readme_autonomous_research_agent_run_agent_py",
+      "target": "readme_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "data/BugsInPy/README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -35316,6 +36187,56 @@
       "confidence_score": 1.0,
       "source": "bugsinpy_readme",
       "target": "bugsinpy_readme_use_docker"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "result_bugs_we_found",
+      "target": "result_bugs_we_found_architectural_analysis_and_bugs_found",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
+      "target": "result_bugs_we_found_1_central_nodes_degree_centrality_subject_8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
+      "target": "result_bugs_we_found_2_hubs_betweenness_centrality_subject_10",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
+      "target": "result_bugs_we_found_3_bridge_nodes_cross_community_links",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "data/BugsInPy/result/bugs_we_found.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
+      "target": "result_bugs_we_found_4_architectural_bugs_and_anti_patterns_found",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -35680,12 +36601,102 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_plan",
+      "target": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
+      "target": "docs_research_bugs_agent_plan_phase_1_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
+      "target": "docs_research_bugs_agent_plan_phase_2_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_plan.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
+      "target": "docs_research_bugs_agent_plan_phase_3_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_prd",
+      "target": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
+      "target": "docs_research_bugs_agent_prd_objectives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
+      "target": "docs_research_bugs_agent_prd_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_prd.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
+      "target": "docs_research_bugs_agent_prd_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Research_bugs_agent_todo.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_bugs_agent_todo",
+      "target": "docs_research_bugs_agent_todo_todo_list_research_bugs_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/Suggestions_plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_plan",
-      "target": "docs_suggestions_plan_implementation_plan_architectural_improvement_suggestions",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_plan_implementation_plan_architectural_improvement_suggestions"
     },
     {
       "relation": "contains",
@@ -35693,9 +36704,9 @@
       "source_file": "docs/Suggestions_plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_plan_implementation_plan_architectural_improvement_suggestions",
-      "target": "docs_suggestions_plan_phase_1_setup",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_plan_phase_1_setup"
     },
     {
       "relation": "contains",
@@ -35703,9 +36714,9 @@
       "source_file": "docs/Suggestions_plan.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_plan_implementation_plan_architectural_improvement_suggestions",
-      "target": "docs_suggestions_plan_phase_2_development",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_plan_phase_2_development"
     },
     {
       "relation": "contains",
@@ -35713,9 +36724,9 @@
       "source_file": "docs/Suggestions_plan.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_plan_implementation_plan_architectural_improvement_suggestions",
-      "target": "docs_suggestions_plan_phase_3_verification",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_plan_phase_3_verification"
     },
     {
       "relation": "contains",
@@ -35723,9 +36734,9 @@
       "source_file": "docs/Suggestions_prd.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_prd",
-      "target": "docs_suggestions_prd_product_requirements_document_prd_architectural_improvement_suggestions",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_prd_product_requirements_document_prd_architectural_improvement_suggestions"
     },
     {
       "relation": "contains",
@@ -35733,9 +36744,9 @@
       "source_file": "docs/Suggestions_prd.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_prd_product_requirements_document_prd_architectural_improvement_suggestions",
-      "target": "docs_suggestions_prd_objectives",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_prd_objectives"
     },
     {
       "relation": "contains",
@@ -35743,9 +36754,9 @@
       "source_file": "docs/Suggestions_prd.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_prd_product_requirements_document_prd_architectural_improvement_suggestions",
-      "target": "docs_suggestions_prd_overview",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_prd_overview"
     },
     {
       "relation": "contains",
@@ -35753,9 +36764,9 @@
       "source_file": "docs/Suggestions_prd.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_prd_product_requirements_document_prd_architectural_improvement_suggestions",
-      "target": "docs_suggestions_prd_requirements",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_prd_requirements"
     },
     {
       "relation": "contains",
@@ -35763,9 +36774,9 @@
       "source_file": "docs/Suggestions_todo.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_suggestions_todo",
-      "target": "docs_suggestions_todo_todo_list_architectural_improvement_suggestions",
-      "confidence_score": 1.0
+      "target": "docs_suggestions_todo_todo_list_architectural_improvement_suggestions"
     },
     {
       "relation": "contains",
@@ -35856,8 +36867,18 @@
       "confidence_score": 1.0,
       "source": "instructions_todo",
       "target": "instructions_todo_todo_list"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/research_question.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_research_question",
+      "target": "docs_research_question_research_questions",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f02d0820245f8eae0420f79ea6f3e923d634ff8e"
+  "built_at_commit": "6e3d42c6734a775f972fc02c3e2cb9632ffd41b8"
 }

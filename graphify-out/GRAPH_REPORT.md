@@ -1,16 +1,16 @@
 # Graph Report - hw4  (2026-06-19)
 
 ## Corpus Check
-- 873 files · ~181,052 words
+- 884 files · ~183,735 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1839 nodes · 1083 edges · 844 communities (22 shown, 822 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.6)
+- 1883 nodes · 1139 edges · 852 communities (28 shown, 824 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.56)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `f02d0820`
+- Built from commit: `6e3d42c6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -853,39 +853,46 @@
 - [[_COMMUNITY_Community 840|Community 840]]
 - [[_COMMUNITY_Community 841|Community 841]]
 - [[_COMMUNITY_Community 842|Community 842]]
+- [[_COMMUNITY_Community 844|Community 844]]
+- [[_COMMUNITY_Community 845|Community 845]]
+- [[_COMMUNITY_Community 846|Community 846]]
+- [[_COMMUNITY_Community 847|Community 847]]
+- [[_COMMUNITY_Community 848|Community 848]]
+- [[_COMMUNITY_Community 849|Community 849]]
+- [[_COMMUNITY_Community 850|Community 850]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `KnowledgeGraph` - 14 edges
-2. `BugsGraph` - 13 edges
-3. `HubsGraph` - 10 edges
-4. `generate_bugs_report()` - 9 edges
-5. `TestBugs` - 9 edges
-6. `parse_frontmatter()` - 8 edges
-7. `check_local_state_dependency()` - 6 edges
-8. `check_unbounded_retries()` - 6 edges
-9. `check_infinite_waiting()` - 6 edges
-10. `extract_all_links()` - 6 edges
+1. `BugsGraph` - 15 edges
+2. `ResearchBugsAgentWorkflow` - 14 edges
+3. `KnowledgeGraph` - 14 edges
+4. `HubsGraph` - 10 edges
+5. `generate_bugs_report()` - 9 edges
+6. `TestBugs` - 9 edges
+7. `parse_frontmatter()` - 8 edges
+8. `check_local_state_dependency()` - 7 edges
+9. `check_unbounded_retries()` - 7 edges
+10. `check_infinite_waiting()` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `TestAgent` --uses--> `ResearchBugsAgentWorkflow`  [INFERRED]
+  tests/test_agent.py → src/agent/workflow.py
 - `TestBugs` --uses--> `BugsGraph`  [INFERRED]
   tests/test_bugs.py → src/bugs/graph_loader.py
 - `TestAnalyzer` --uses--> `KnowledgeGraph`  [INFERRED]
   tests/test_analyzer.py → src/centrality/graph.py
-- `main()` --calls--> `BugsGraph`  [EXTRACTED]
-  src/bugs/cli.py → src/bugs/graph_loader.py
-- `main()` --calls--> `generate_bugs_report()`  [EXTRACTED]
-  src/bugs/cli.py → src/bugs/reporter.py
-- `generate_bugs_report()` --calls--> `check_tight_coupling()`  [EXTRACTED]
-  src/bugs/reporter.py → src/bugs/evaluators.py
+- `main()` --calls--> `ResearchBugsAgentWorkflow`  [EXTRACTED]
+  src/agent/cli.py → src/agent/workflow.py
+- `ResearchBugsAgentWorkflow` --uses--> `BugsGraph`  [INFERRED]
+  src/agent/workflow.py → src/bugs/graph_loader.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (844 total, 822 thin omitted)
+## Communities (852 total, 824 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (22): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+14 more)
+Cohesion: 0.09
+Nodes (15): main(), extract_all_links(), extract_markdown_links(), extract_wiki_links(), parse_frontmatter(), Extracts all wiki-links of the form [[Node Name]] from the content., Extracts all relative internal markdown links., Parses basic YAML frontmatter from markdown content. (+7 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.33
@@ -916,8 +923,8 @@ Cohesion: 0.40
 Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Hubs Analysis, Requirements
 
 ### Community 831 - "Community 831"
-Cohesion: 0.11
-Nodes (17): main(), analyze_file_content(), check_god_class(), check_infinite_waiting(), check_local_state_dependency(), check_tight_coupling(), check_unbounded_retries(), Checks for automated retry mechanisms lacking exponential backoff or jitter. (+9 more)
+Cohesion: 0.08
+Nodes (20): main(), ResearchBugsAgentWorkflow, main(), analyze_file_content(), check_god_class(), check_infinite_waiting(), check_local_state_dependency(), check_tight_coupling() (+12 more)
 
 ### Community 832 - "Community 832"
 Cohesion: 0.18
@@ -947,17 +954,43 @@ Nodes (4): Implementation Plan - Architectural Improvement Suggestions, Phase 1:
 Cohesion: 0.40
 Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Architectural Improvement Suggestions, Requirements
 
+### Community 844 - "Community 844"
+Cohesion: 0.16
+Nodes (7): calculate_betweenness_centrality(), Calculates Betweenness Centrality for all nodes in the graph using Brandes' algo, main(), HubsGraph, generate_hubs_report(), Generates the Hubs.md report listing ranked bottleneck nodes., TestHubs
+
+### Community 845 - "Community 845"
+Cohesion: 0.33
+Nodes (5): 1. Central Nodes (Degree Centrality - Subject 8), 2. Hubs (Betweenness Centrality - Subject 10), 3. Bridge Nodes (Cross-Community Links), 4. Architectural Bugs and Anti-Patterns Found, Architectural Analysis and Bugs Found
+
+### Community 846 - "Community 846"
+Cohesion: 0.40
+Nodes (4): Implementation Plan - Research Bugs Agent, Phase 1: Setup, Phase 2: Development, Phase 3: Verification
+
+### Community 847 - "Community 847"
+Cohesion: 0.40
+Nodes (4): Objectives, Overview, Product Requirements Document (PRD) - Research Bugs Agent, Requirements
+
+### Community 848 - "Community 848"
+Cohesion: 0.40
+Nodes (4): Autonomous Research Agent (`run_agent.py`), Codebase Architecture Analysis & Research Agent, Features, Usage
+
 ## Knowledge Gaps
-- **852 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+847 more)
+- **866 isolated node(s):** `run_test.sh script`, `setup.sh script`, `run_test.sh script`, `setup.sh script`, `run_test.sh script` (+861 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **822 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **824 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `calculate_betweenness_centrality()` connect `Community 844` to `Community 831`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Are the 2 inferred relationships involving `BugsGraph` (e.g. with `ResearchBugsAgentWorkflow` and `TestBugs`) actually correct?**
+  _`BugsGraph` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 2 inferred relationships involving `ResearchBugsAgentWorkflow` (e.g. with `BugsGraph` and `TestAgent`) actually correct?**
+  _`ResearchBugsAgentWorkflow` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `run_test.sh script`, `setup.sh script`, `run_test.sh script` to the rest of the system?**
-  _870 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _884 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05974025974025974 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.09365079365079365 - nodes in this community are weakly interconnected._
 - **Should `Community 831` be split into smaller, more focused modules?**
-  _Cohesion score 0.1140819964349376 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07541478129713423 - nodes in this community are weakly interconnected._
