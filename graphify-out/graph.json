@@ -22884,7 +22884,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_analyzer_py_hubs_analyzer",
-      "community": 844,
+      "community": 0,
       "norm_label": "hubs_analyzer.py"
     },
     {
@@ -22896,6 +22896,16 @@
       "id": "run_agent",
       "community": 831,
       "norm_label": "run_agent.py"
+    },
+    {
+      "label": "run_reverse_engineer.py",
+      "file_type": "code",
+      "source_file": "run_reverse_engineer.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "run_reverse_engineer",
+      "community": 844,
+      "norm_label": "run_reverse_engineer.py"
     },
     {
       "label": "__init__.py",
@@ -23544,7 +23554,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hubs_analyzer_py_hubs_analyzer",
-      "community": 844,
+      "community": 0,
       "norm_label": "analyzer.py"
     },
     {
@@ -23554,7 +23564,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_analyzer_calculate_betweenness_centrality",
-      "community": 844,
+      "community": 0,
       "norm_label": "calculate_betweenness_centrality()"
     },
     {
@@ -23564,7 +23574,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "hubs_analyzer_rationale_2",
-      "community": 844,
+      "community": 0,
       "norm_label": "calculates betweenness centrality for all nodes in the graph using brandes' algo"
     },
     {
@@ -23574,7 +23584,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_cli",
-      "community": 844,
+      "community": 0,
       "norm_label": "cli.py"
     },
     {
@@ -23584,7 +23594,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hubs_cli_main",
-      "community": 844,
+      "community": 0,
       "norm_label": "main()"
     },
     {
@@ -23594,7 +23604,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_graph",
-      "community": 844,
+      "community": 0,
       "norm_label": "graph.py"
     },
     {
@@ -23604,7 +23614,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph",
-      "community": 844,
+      "community": 0,
       "norm_label": "hubsgraph"
     },
     {
@@ -23614,7 +23624,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_init",
-      "community": 844,
+      "community": 0,
       "norm_label": ".__init__()"
     },
     {
@@ -23624,7 +23634,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_add_node",
-      "community": 844,
+      "community": 0,
       "norm_label": ".add_node()"
     },
     {
@@ -23634,7 +23644,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_add_edge",
-      "community": 844,
+      "community": 0,
       "norm_label": ".add_edge()"
     },
     {
@@ -23644,7 +23654,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_build_vault_mapping",
-      "community": 844,
+      "community": 0,
       "norm_label": ".build_vault_mapping()"
     },
     {
@@ -23654,7 +23664,7 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "hubs_graph_hubsgraph_load_from_json",
-      "community": 844,
+      "community": 0,
       "norm_label": ".load_from_json()"
     },
     {
@@ -23664,7 +23674,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "hubs_reporter",
-      "community": 844,
+      "community": 0,
       "norm_label": "reporter.py"
     },
     {
@@ -23674,7 +23684,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "hubs_reporter_generate_hubs_report",
-      "community": 844,
+      "community": 0,
       "norm_label": "generate_hubs_report()"
     },
     {
@@ -23684,8 +23694,168 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "hubs_reporter_rationale_5",
-      "community": 844,
+      "community": 0,
       "norm_label": "generates the hubs.md report listing ranked bottleneck nodes."
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reverse_engineer_init",
+      "community": 856,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "ast_scanner.py",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reverse_engineer_ast_scanner",
+      "community": 844,
+      "norm_label": "ast_scanner.py"
+    },
+    {
+      "label": "ASTScanner",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "reverse_engineer_ast_scanner_astscanner",
+      "community": 844,
+      "norm_label": "astscanner"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "reverse_engineer_ast_scanner_astscanner_init",
+      "community": 844,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".scan()",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "reverse_engineer_ast_scanner_astscanner_scan",
+      "community": 844,
+      "norm_label": ".scan()"
+    },
+    {
+      "label": ".scan_file_node()",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "reverse_engineer_ast_scanner_astscanner_scan_file_node",
+      "community": 844,
+      "norm_label": ".scan_file_node()"
+    },
+    {
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reverse_engineer_cli",
+      "community": 844,
+      "norm_label": "cli.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "reverse_engineer_cli_main",
+      "community": 844,
+      "norm_label": "main()"
+    },
+    {
+      "label": "mapper.py",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reverse_engineer_mapper",
+      "community": 844,
+      "norm_label": "mapper.py"
+    },
+    {
+      "label": "generate_block_diagram()",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reverse_engineer_mapper_generate_block_diagram",
+      "community": 844,
+      "norm_label": "generate_block_diagram()"
+    },
+    {
+      "label": "generate_oop_diagram()",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "reverse_engineer_mapper_generate_oop_diagram",
+      "community": 844,
+      "norm_label": "generate_oop_diagram()"
+    },
+    {
+      "label": "Groups modules by top-level package and creates cross-package flowchart links.",
+      "file_type": "rationale",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "reverse_engineer_mapper_rationale_2",
+      "community": 844,
+      "norm_label": "groups modules by top-level package and creates cross-package flowchart links."
+    },
+    {
+      "label": "Constructs class definitions, methods, inheritance, and compositions in Mermaid",
+      "file_type": "rationale",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "reverse_engineer_mapper_rationale_34",
+      "community": 844,
+      "norm_label": "constructs class definitions, methods, inheritance, and compositions in mermaid"
+    },
+    {
+      "label": "reporter.py",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "reverse_engineer_reporter",
+      "community": 844,
+      "norm_label": "reporter.py"
+    },
+    {
+      "label": "write_reverse_engineer_report()",
+      "file_type": "code",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "reverse_engineer_reporter_write_reverse_engineer_report",
+      "community": 844,
+      "norm_label": "write_reverse_engineer_report()"
+    },
+    {
+      "label": "Assembles the block diagram, OOP schema, and textual descriptions into a markdow",
+      "file_type": "rationale",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "reverse_engineer_reporter_rationale_5",
+      "community": 844,
+      "norm_label": "assembles the block diagram, oop schema, and textual descriptions into a markdow"
     },
     {
       "label": "__init__.py",
@@ -24084,7 +24254,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_hubs",
-      "community": 844,
+      "community": 0,
       "norm_label": "test_hubs.py"
     },
     {
@@ -24094,7 +24264,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs",
-      "community": 844,
+      "community": 0,
       "norm_label": "testhubs"
     },
     {
@@ -24104,7 +24274,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs_test_star_graph_betweenness",
-      "community": 844,
+      "community": 0,
       "norm_label": ".test_star_graph_betweenness()"
     },
     {
@@ -24114,8 +24284,58 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "tests_test_hubs_testhubs_test_path_graph_betweenness",
-      "community": 844,
+      "community": 0,
       "norm_label": ".test_path_graph_betweenness()"
+    },
+    {
+      "label": "test_reverse_engineer.py",
+      "file_type": "code",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_reverse_engineer",
+      "community": 844,
+      "norm_label": "test_reverse_engineer.py"
+    },
+    {
+      "label": "TestReverseEngineer",
+      "file_type": "code",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "tests_test_reverse_engineer_testreverseengineer",
+      "community": 844,
+      "norm_label": "testreverseengineer"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "tests_test_reverse_engineer_testreverseengineer_setup",
+      "community": 844,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".tearDown()",
+      "file_type": "code",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tests_test_reverse_engineer_testreverseengineer_teardown",
+      "community": 844,
+      "norm_label": ".teardown()"
+    },
+    {
+      "label": ".test_ast_scanning_rules()",
+      "file_type": "code",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tests_test_reverse_engineer_testreverseengineer_test_ast_scanning_rules",
+      "community": 844,
+      "norm_label": ".test_ast_scanning_rules()"
     },
     {
       "label": "test_suggestions.py",
@@ -25098,6 +25318,126 @@
       "norm_label": "todo list - research bugs agent"
     },
     {
+      "label": "Reverse_engineering_agent_plan.md",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_plan",
+      "community": 853,
+      "norm_label": "reverse_engineering_agent_plan.md"
+    },
+    {
+      "label": "Implementation Plan - Reverse Engineering Agent",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_plan_implementation_plan_reverse_engineering_agent",
+      "community": 853,
+      "norm_label": "implementation plan - reverse engineering agent"
+    },
+    {
+      "label": "Phase 1: Setup",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_plan_phase_1_setup",
+      "community": 853,
+      "norm_label": "phase 1: setup"
+    },
+    {
+      "label": "Phase 2: Development",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_plan_phase_2_development",
+      "community": 853,
+      "norm_label": "phase 2: development"
+    },
+    {
+      "label": "Phase 3: Verification",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_plan_phase_3_verification",
+      "community": 853,
+      "norm_label": "phase 3: verification"
+    },
+    {
+      "label": "Reverse_engineering_agent_prd.md",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_prd",
+      "community": 854,
+      "norm_label": "reverse_engineering_agent_prd.md"
+    },
+    {
+      "label": "Product Requirements Document (PRD) - Reverse Engineering Agent",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_prd_product_requirements_document_prd_reverse_engineering_agent",
+      "community": 854,
+      "norm_label": "product requirements document (prd) - reverse engineering agent"
+    },
+    {
+      "label": "Overview",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_prd_overview",
+      "community": 854,
+      "norm_label": "overview"
+    },
+    {
+      "label": "Objectives",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_prd_objectives",
+      "community": 854,
+      "norm_label": "objectives"
+    },
+    {
+      "label": "Requirements",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_prd_requirements",
+      "community": 854,
+      "norm_label": "requirements"
+    },
+    {
+      "label": "Reverse_engineering_agent_todo.md",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_todo",
+      "community": 855,
+      "norm_label": "reverse_engineering_agent_todo.md"
+    },
+    {
+      "label": "Todo List - Reverse Engineering Agent",
+      "file_type": "document",
+      "source_file": "docs/Reverse_engineering_agent_todo.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_reverse_engineering_agent_todo_todo_list_reverse_engineering_agent",
+      "community": 855,
+      "norm_label": "todo list - reverse engineering agent"
+    },
+    {
       "label": "Suggestions_plan.md",
       "file_type": "document",
       "source_file": "docs/Suggestions_plan.md",
@@ -25356,6 +25696,116 @@
       "id": "docs_research_question_research_questions",
       "community": 850,
       "norm_label": "research questions"
+    },
+    {
+      "label": "reverse_engineer_agent_result.md",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result",
+      "community": 852,
+      "norm_label": "reverse_engineer_agent_result.md"
+    },
+    {
+      "label": "Codebase Reverse Engineering Report",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_codebase_reverse_engineering_report",
+      "community": 852,
+      "norm_label": "codebase reverse engineering report"
+    },
+    {
+      "label": "1. Architectural Block Diagram",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_1_architectural_block_diagram",
+      "community": 852,
+      "norm_label": "1. architectural block diagram"
+    },
+    {
+      "label": "Block Explanation",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_block_explanation",
+      "community": 852,
+      "norm_label": "block explanation"
+    },
+    {
+      "label": "2. Object-Oriented (OOP) Class Schema",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_2_object_oriented_oop_class_schema",
+      "community": 852,
+      "norm_label": "2. object-oriented (oop) class schema"
+    },
+    {
+      "label": "Class Relationships and Explanations",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_class_relationships_and_explanations",
+      "community": 852,
+      "norm_label": "class relationships and explanations"
+    },
+    {
+      "label": "Class: `ASTScanner`",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_class_astscanner",
+      "community": 852,
+      "norm_label": "class: `astscanner`"
+    },
+    {
+      "label": "Class: `BugsGraph`",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_class_bugsgraph",
+      "community": 852,
+      "norm_label": "class: `bugsgraph`"
+    },
+    {
+      "label": "Class: `HubsGraph`",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_class_hubsgraph",
+      "community": 852,
+      "norm_label": "class: `hubsgraph`"
+    },
+    {
+      "label": "Class: `KnowledgeGraph`",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_class_knowledgegraph",
+      "community": 852,
+      "norm_label": "class: `knowledgegraph`"
+    },
+    {
+      "label": "Class: `ResearchBugsAgentWorkflow`",
+      "file_type": "document",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "result_reverse_engineer_agent_result_class_researchbugsagentworkflow",
+      "community": 852,
+      "norm_label": "class: `researchbugsagentworkflow`"
     }
   ],
   "links": [
@@ -33740,8 +34190,19 @@
       "source_file": "run_agent.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "run_agent",
-      "target": "agent_cli",
+      "target": "agent_cli"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "run_reverse_engineer.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "run_reverse_engineer",
+      "target": "reverse_engineer_cli",
       "confidence_score": 1.0
     },
     {
@@ -33750,9 +34211,9 @@
       "source_file": "src/agent/cli.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_cli",
-      "target": "agent_cli_main",
-      "confidence_score": 1.0
+      "target": "agent_cli_main"
     },
     {
       "relation": "imports_from",
@@ -33761,9 +34222,9 @@
       "source_file": "src/agent/cli.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_cli",
-      "target": "agent_workflow",
-      "confidence_score": 1.0
+      "target": "agent_workflow"
     },
     {
       "relation": "imports",
@@ -33772,9 +34233,9 @@
       "source_file": "src/agent/cli.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_cli",
-      "target": "agent_workflow_researchbugsagentworkflow",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow"
     },
     {
       "relation": "calls",
@@ -33783,9 +34244,9 @@
       "source_file": "src/agent/cli.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_cli_main",
-      "target": "agent_workflow_researchbugsagentworkflow",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow"
     },
     {
       "relation": "contains",
@@ -33793,9 +34254,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow",
-      "target": "agent_workflow_researchbugsagentworkflow",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow"
     },
     {
       "relation": "imports_from",
@@ -33804,9 +34265,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow",
-      "target": "bugs_evaluators",
-      "confidence_score": 1.0
+      "target": "bugs_evaluators"
     },
     {
       "relation": "imports_from",
@@ -33815,9 +34276,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow",
-      "target": "bugs_graph_loader",
-      "confidence_score": 1.0
+      "target": "bugs_graph_loader"
     },
     {
       "relation": "imports_from",
@@ -33826,9 +34287,9 @@
       "source_file": "tests/test_agent.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_agent",
-      "target": "agent_workflow",
-      "confidence_score": 1.0
+      "target": "agent_workflow"
     },
     {
       "relation": "method",
@@ -33836,9 +34297,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_bridges_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_bridges_node"
     },
     {
       "relation": "method",
@@ -33846,9 +34307,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_bugs_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_bugs_node"
     },
     {
       "relation": "method",
@@ -33856,9 +34317,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_centrality_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_centrality_node"
     },
     {
       "relation": "method",
@@ -33866,9 +34327,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_compile_report_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_compile_report_node"
     },
     {
       "relation": "method",
@@ -33876,9 +34337,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_hubs_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_hubs_node"
     },
     {
       "relation": "method",
@@ -33886,9 +34347,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_init",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_init"
     },
     {
       "relation": "method",
@@ -33896,9 +34357,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_load_graph_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_load_graph_node"
     },
     {
       "relation": "method",
@@ -33906,9 +34367,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "agent_workflow_researchbugsagentworkflow_run",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_run"
     },
     {
       "relation": "uses",
@@ -33916,9 +34377,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L3",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "agent_workflow_researchbugsagentworkflow",
-      "target": "bugs_graph_loader_bugsgraph",
-      "confidence_score": 0.5
+      "target": "bugs_graph_loader_bugsgraph"
     },
     {
       "relation": "uses",
@@ -33926,9 +34387,9 @@
       "source_file": "tests/test_agent.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "tests_test_agent_testagent",
-      "target": "agent_workflow_researchbugsagentworkflow",
-      "confidence_score": 0.5
+      "target": "agent_workflow_researchbugsagentworkflow"
     },
     {
       "relation": "calls",
@@ -33948,9 +34409,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow_run",
-      "target": "agent_workflow_researchbugsagentworkflow_bridges_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_bridges_node"
     },
     {
       "relation": "calls",
@@ -33959,9 +34420,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow_run",
-      "target": "agent_workflow_researchbugsagentworkflow_bugs_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_bugs_node"
     },
     {
       "relation": "calls",
@@ -33970,9 +34431,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow_run",
-      "target": "agent_workflow_researchbugsagentworkflow_centrality_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_centrality_node"
     },
     {
       "relation": "calls",
@@ -33981,9 +34442,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow_run",
-      "target": "agent_workflow_researchbugsagentworkflow_compile_report_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_compile_report_node"
     },
     {
       "relation": "calls",
@@ -33992,9 +34453,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow_run",
-      "target": "agent_workflow_researchbugsagentworkflow_hubs_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_hubs_node"
     },
     {
       "relation": "calls",
@@ -34003,9 +34464,9 @@
       "source_file": "src/agent/workflow.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agent_workflow_researchbugsagentworkflow_run",
-      "target": "agent_workflow_researchbugsagentworkflow_load_graph_node",
-      "confidence_score": 1.0
+      "target": "agent_workflow_researchbugsagentworkflow_load_graph_node"
     },
     {
       "relation": "calls",
@@ -35497,6 +35958,313 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "reverse_engineer_ast_scanner",
+      "target": "reverse_engineer_ast_scanner_astscanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "reverse_engineer_cli",
+      "target": "reverse_engineer_ast_scanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer",
+      "target": "reverse_engineer_ast_scanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "reverse_engineer_ast_scanner_astscanner",
+      "target": "reverse_engineer_ast_scanner_astscanner_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "reverse_engineer_ast_scanner_astscanner",
+      "target": "reverse_engineer_ast_scanner_astscanner_scan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "reverse_engineer_ast_scanner_astscanner",
+      "target": "reverse_engineer_ast_scanner_astscanner_scan_file_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "reverse_engineer_cli",
+      "target": "reverse_engineer_ast_scanner_astscanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "reverse_engineer_cli_main",
+      "target": "reverse_engineer_ast_scanner_astscanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "source": "tests_test_reverse_engineer_testreverseengineer",
+      "target": "reverse_engineer_ast_scanner_astscanner",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer_testreverseengineer_test_ast_scanning_rules",
+      "target": "reverse_engineer_ast_scanner_astscanner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/ast_scanner.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "reverse_engineer_ast_scanner_astscanner_scan",
+      "target": "reverse_engineer_ast_scanner_astscanner_scan_file_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "reverse_engineer_cli",
+      "target": "reverse_engineer_cli_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "reverse_engineer_cli",
+      "target": "reverse_engineer_reporter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "reverse_engineer_cli",
+      "target": "reverse_engineer_reporter_write_reverse_engineer_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/cli.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "reverse_engineer_cli_main",
+      "target": "reverse_engineer_reporter_write_reverse_engineer_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "reverse_engineer_mapper",
+      "target": "reverse_engineer_mapper_generate_block_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "reverse_engineer_mapper",
+      "target": "reverse_engineer_mapper_generate_oop_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "reverse_engineer_reporter",
+      "target": "reverse_engineer_mapper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer",
+      "target": "reverse_engineer_mapper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "reverse_engineer_mapper_rationale_2",
+      "target": "reverse_engineer_mapper_generate_block_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "reverse_engineer_reporter",
+      "target": "reverse_engineer_mapper_generate_block_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "reverse_engineer_reporter_write_reverse_engineer_report",
+      "target": "reverse_engineer_mapper_generate_block_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer_testreverseengineer_test_ast_scanning_rules",
+      "target": "reverse_engineer_mapper_generate_block_diagram"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/mapper.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "reverse_engineer_mapper_rationale_34",
+      "target": "reverse_engineer_mapper_generate_oop_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "reverse_engineer_reporter",
+      "target": "reverse_engineer_mapper_generate_oop_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "reverse_engineer_reporter_write_reverse_engineer_report",
+      "target": "reverse_engineer_mapper_generate_oop_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer_testreverseengineer_test_ast_scanning_rules",
+      "target": "reverse_engineer_mapper_generate_oop_diagram"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "reverse_engineer_reporter",
+      "target": "reverse_engineer_reporter_write_reverse_engineer_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/reverse_engineer/reporter.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "reverse_engineer_reporter_rationale_5",
+      "target": "reverse_engineer_reporter_write_reverse_engineer_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/suggestions/cli.py",
       "source_location": "L7",
       "weight": 1.0,
@@ -35724,9 +36492,9 @@
       "source_file": "tests/test_agent.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_agent",
-      "target": "tests_test_agent_testagent",
-      "confidence_score": 1.0
+      "target": "tests_test_agent_testagent"
     },
     {
       "relation": "method",
@@ -35734,9 +36502,9 @@
       "source_file": "tests/test_agent.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_agent_testagent",
-      "target": "tests_test_agent_testagent_setup",
-      "confidence_score": 1.0
+      "target": "tests_test_agent_testagent_setup"
     },
     {
       "relation": "method",
@@ -35744,9 +36512,9 @@
       "source_file": "tests/test_agent.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_agent_testagent",
-      "target": "tests_test_agent_testagent_teardown",
-      "confidence_score": 1.0
+      "target": "tests_test_agent_testagent_teardown"
     },
     {
       "relation": "method",
@@ -35754,9 +36522,9 @@
       "source_file": "tests/test_agent.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_agent_testagent",
-      "target": "tests_test_agent_testagent_test_agent_workflow_execution",
-      "confidence_score": 1.0
+      "target": "tests_test_agent_testagent_test_agent_workflow_execution"
     },
     {
       "relation": "contains",
@@ -35961,6 +36729,46 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer",
+      "target": "tests_test_reverse_engineer_testreverseengineer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer_testreverseengineer",
+      "target": "tests_test_reverse_engineer_testreverseengineer_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer_testreverseengineer",
+      "target": "tests_test_reverse_engineer_testreverseengineer_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_reverse_engineer.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_test_reverse_engineer_testreverseengineer",
+      "target": "tests_test_reverse_engineer_testreverseengineer_test_ast_scanning_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_suggestions.py",
       "source_location": "L8",
       "weight": 1.0,
@@ -36104,9 +36912,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_codebase_architecture_analysis_research_agent",
-      "confidence_score": 1.0
+      "target": "readme_codebase_architecture_analysis_research_agent"
     },
     {
       "relation": "contains",
@@ -36114,9 +36922,9 @@
       "source_file": "README.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_codebase_architecture_analysis_research_agent",
-      "target": "readme_autonomous_research_agent_run_agent_py",
-      "confidence_score": 1.0
+      "target": "readme_autonomous_research_agent_run_agent_py"
     },
     {
       "relation": "contains",
@@ -36124,9 +36932,9 @@
       "source_file": "README.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_codebase_architecture_analysis_research_agent",
-      "target": "readme_features",
-      "confidence_score": 1.0
+      "target": "readme_features"
     },
     {
       "relation": "contains",
@@ -36134,9 +36942,9 @@
       "source_file": "README.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_autonomous_research_agent_run_agent_py",
-      "target": "readme_usage",
-      "confidence_score": 1.0
+      "target": "readme_usage"
     },
     {
       "relation": "contains",
@@ -36194,9 +37002,9 @@
       "source_file": "data/BugsInPy/result/bugs_we_found.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "result_bugs_we_found",
-      "target": "result_bugs_we_found_architectural_analysis_and_bugs_found",
-      "confidence_score": 1.0
+      "target": "result_bugs_we_found_architectural_analysis_and_bugs_found"
     },
     {
       "relation": "contains",
@@ -36204,9 +37012,9 @@
       "source_file": "data/BugsInPy/result/bugs_we_found.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
-      "target": "result_bugs_we_found_1_central_nodes_degree_centrality_subject_8",
-      "confidence_score": 1.0
+      "target": "result_bugs_we_found_1_central_nodes_degree_centrality_subject_8"
     },
     {
       "relation": "contains",
@@ -36214,9 +37022,9 @@
       "source_file": "data/BugsInPy/result/bugs_we_found.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
-      "target": "result_bugs_we_found_2_hubs_betweenness_centrality_subject_10",
-      "confidence_score": 1.0
+      "target": "result_bugs_we_found_2_hubs_betweenness_centrality_subject_10"
     },
     {
       "relation": "contains",
@@ -36224,9 +37032,9 @@
       "source_file": "data/BugsInPy/result/bugs_we_found.md",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
-      "target": "result_bugs_we_found_3_bridge_nodes_cross_community_links",
-      "confidence_score": 1.0
+      "target": "result_bugs_we_found_3_bridge_nodes_cross_community_links"
     },
     {
       "relation": "contains",
@@ -36234,9 +37042,9 @@
       "source_file": "data/BugsInPy/result/bugs_we_found.md",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "result_bugs_we_found_architectural_analysis_and_bugs_found",
-      "target": "result_bugs_we_found_4_architectural_bugs_and_anti_patterns_found",
-      "confidence_score": 1.0
+      "target": "result_bugs_we_found_4_architectural_bugs_and_anti_patterns_found"
     },
     {
       "relation": "contains",
@@ -36604,9 +37412,9 @@
       "source_file": "docs/Research_bugs_agent_plan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_plan",
-      "target": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent"
     },
     {
       "relation": "contains",
@@ -36614,9 +37422,9 @@
       "source_file": "docs/Research_bugs_agent_plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
-      "target": "docs_research_bugs_agent_plan_phase_1_setup",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_plan_phase_1_setup"
     },
     {
       "relation": "contains",
@@ -36624,9 +37432,9 @@
       "source_file": "docs/Research_bugs_agent_plan.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
-      "target": "docs_research_bugs_agent_plan_phase_2_development",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_plan_phase_2_development"
     },
     {
       "relation": "contains",
@@ -36634,9 +37442,9 @@
       "source_file": "docs/Research_bugs_agent_plan.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_plan_implementation_plan_research_bugs_agent",
-      "target": "docs_research_bugs_agent_plan_phase_3_verification",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_plan_phase_3_verification"
     },
     {
       "relation": "contains",
@@ -36644,9 +37452,9 @@
       "source_file": "docs/Research_bugs_agent_prd.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_prd",
-      "target": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent"
     },
     {
       "relation": "contains",
@@ -36654,9 +37462,9 @@
       "source_file": "docs/Research_bugs_agent_prd.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
-      "target": "docs_research_bugs_agent_prd_objectives",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_prd_objectives"
     },
     {
       "relation": "contains",
@@ -36664,9 +37472,9 @@
       "source_file": "docs/Research_bugs_agent_prd.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
-      "target": "docs_research_bugs_agent_prd_overview",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_prd_overview"
     },
     {
       "relation": "contains",
@@ -36674,9 +37482,9 @@
       "source_file": "docs/Research_bugs_agent_prd.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_prd_product_requirements_document_prd_research_bugs_agent",
-      "target": "docs_research_bugs_agent_prd_requirements",
-      "confidence_score": 1.0
+      "target": "docs_research_bugs_agent_prd_requirements"
     },
     {
       "relation": "contains",
@@ -36684,8 +37492,98 @@
       "source_file": "docs/Research_bugs_agent_todo.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_bugs_agent_todo",
-      "target": "docs_research_bugs_agent_todo_todo_list_research_bugs_agent",
+      "target": "docs_research_bugs_agent_todo_todo_list_research_bugs_agent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_plan",
+      "target": "docs_reverse_engineering_agent_plan_implementation_plan_reverse_engineering_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_plan_implementation_plan_reverse_engineering_agent",
+      "target": "docs_reverse_engineering_agent_plan_phase_1_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_plan_implementation_plan_reverse_engineering_agent",
+      "target": "docs_reverse_engineering_agent_plan_phase_2_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_plan.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_plan_implementation_plan_reverse_engineering_agent",
+      "target": "docs_reverse_engineering_agent_plan_phase_3_verification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_prd",
+      "target": "docs_reverse_engineering_agent_prd_product_requirements_document_prd_reverse_engineering_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_prd_product_requirements_document_prd_reverse_engineering_agent",
+      "target": "docs_reverse_engineering_agent_prd_objectives",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_prd_product_requirements_document_prd_reverse_engineering_agent",
+      "target": "docs_reverse_engineering_agent_prd_overview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_prd.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_prd_product_requirements_document_prd_reverse_engineering_agent",
+      "target": "docs_reverse_engineering_agent_prd_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/Reverse_engineering_agent_todo.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_reverse_engineering_agent_todo",
+      "target": "docs_reverse_engineering_agent_todo_todo_list_reverse_engineering_agent",
       "confidence_score": 1.0
     },
     {
@@ -36874,11 +37772,111 @@
       "source_file": "docs/research_question.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_research_question",
-      "target": "docs_research_question_research_questions",
+      "target": "docs_research_question_research_questions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result",
+      "target": "result_reverse_engineer_agent_result_codebase_reverse_engineering_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_codebase_reverse_engineering_report",
+      "target": "result_reverse_engineer_agent_result_1_architectural_block_diagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_codebase_reverse_engineering_report",
+      "target": "result_reverse_engineer_agent_result_2_object_oriented_oop_class_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_1_architectural_block_diagram",
+      "target": "result_reverse_engineer_agent_result_block_explanation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_2_object_oriented_oop_class_schema",
+      "target": "result_reverse_engineer_agent_result_class_relationships_and_explanations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_class_relationships_and_explanations",
+      "target": "result_reverse_engineer_agent_result_class_astscanner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_class_relationships_and_explanations",
+      "target": "result_reverse_engineer_agent_result_class_bugsgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_class_relationships_and_explanations",
+      "target": "result_reverse_engineer_agent_result_class_hubsgraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_class_relationships_and_explanations",
+      "target": "result_reverse_engineer_agent_result_class_knowledgegraph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "result/reverse_engineer_agent_result.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "result_reverse_engineer_agent_result_class_relationships_and_explanations",
+      "target": "result_reverse_engineer_agent_result_class_researchbugsagentworkflow",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6e3d42c6734a775f972fc02c3e2cb9632ffd41b8"
+  "built_at_commit": "530d1c90cec13c9bc2e9c04650baac1045a727ae"
 }
