@@ -28,40 +28,72 @@ The target codebase contains several semantic and syntactic bugs:
 ## 3. Answers to Research and Understanding Questions
 
 ### 3.1. What is the actual architecture of the project?
-The project consists of two independent functional domains (communities):
-1. **Polygons Drawing Community (`polygons/`):** Contains `polygons.py` (entry point) and the custom `Polygon` class representing geometric operations drawn via the `turtle` library.
-2. **Maths Quiz Community (`mathsquiz/`):** Contains multiple steps of a maths quiz game (`mathsquiz.py`, `mathsquiz-step1.py`, `mathsquiz-step2.py`, `mathsquiz-step3.py`, `mathsquiz-final.py`).
+The project `broken-python` is structured as a collection of decoupled functional modules and classes.
+* **Functional Communities:** According to the extracted entity-relationship graph in [reports/graph.json](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/graph.json), the project is divided into 6 distinct communities:
+  - **Polygons Drawing Community (`polygons/`):** Consists of the entry-point script `polygons.py` and the `Polygon` class representing geometric configurations. It uses Python's standard `turtle` graphics library to draw polygons dynamically.
+  - **Maths Quiz Community (`mathsquiz/`):** Contains several progressive implementation steps of a command-line arithmetic game (`mathsquiz.py`, `mathsquiz-step1.py`, `mathsquiz-step2.py`, `mathsquiz-step3.py`, `mathsquiz-final.py`).
+  - **Metadata & Licensing Nodes:** Includes the root documentation files (`README.md`, `LICENSE.txt`).
+* **Inter-Community Coupling:** The architectural coupling between the communities is low. The two groups share no functional imports, method calls, or class dependencies, acting as isolated functional components. Within each community, modular cohesion is high, focused entirely on the respective entry point script files.
 
 ### 3.2. Which components are the most central or key to the system?
-Based on Degree Centrality (Subject 8) and Betweenness Centrality (Subject 10):
-- **`polygons.py`:** Has the highest Degree Centrality (6) and Betweenness Centrality (0.095), acting as the central hub connecting geometric math and drawing functions.
-- **`Polygon`:** The central Object class representation (Degree 4).
-- **`mathsquiz-step3.py`:** The most central module in the quiz game (Degree 3).
+Based on connectivity and bottleneck analysis computed on the graph schema:
+* **Degree Centrality Key Components (Subject 8):**
+  - **`polygons.py` (Rank 1):** Has the highest Degree Centrality (6 connections), serving as the main interface linking math detail calculations, drawing routines, and the user console (see [reports/Centrality.md#L9](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/Centrality.md#L9)).
+  - **`Polygon` (Rank 2):** Has a Degree of 4, functioning as the primary OOP class model.
+  - **`mathsquiz-step2.py` & `mathsquiz-step3.py` (Ranks 3 & 4):** Each have a Degree of 3, representing the central logic blocks for the maths quiz game.
+* **Betweenness Centrality Connector Hubs (Subject 10):**
+  - **`polygons.py` (Rank 1):** Holds the highest betweenness centrality score of **0.095**, confirming it is the critical bottleneck through which all information flows (see [reports/Hubs.md#L9](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/Hubs.md#L9)).
+  - **`Polygon` (Rank 2):** Holds a Betweenness score of **0.056**, representing the core object dependency.
+  - **`mathsquiz-step2.py` & `mathsquiz-step3.py` (Ranks 4 & 5):** Each hold a Betweenness score of **0.013**, indicating minor connector status. All other nodes have betweenness scores of `0.000`, confirming they have low dependency flow.
 
 ### 3.3. Where are the "God Nodes" or monolith risks?
-`polygons.py` represents a minor monolithic risk for this tiny codebase, as it flatly handles user input, calculation logic, canvas setup, drawing, and execution. If this codebase were scaled, `polygons.py` would need to be split into discrete user-interface, calculation, and rendering services.
+A "God Node" (Subject 8) represents a component that aggregates too many responsibilities, violating single-responsibility rules.
+* **Monolithic God Node Identified:** `polygons.py` is the primary monolithic risk, possessing 6 incident connections (see [reports/Centrality.md#L9](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/Centrality.md#L9)).
+* **Responsibility Overload:** The script combines the following disparate tasks in a single flat file:
+  - Console CLI argument parser and input scanning (`input`).
+  - Mathematical polygon detail computations (`calc_polygon_details`).
+  - Class instantiation calls.
+  - GUI graphics window setup (`turtle.Screen`).
+  - Graphics pen configuration and path drawing (`draw_polygon`).
+* **Architectural Risks:** This tight bundling of responsibilities makes the module highly brittle. A change in the GUI drawing library or interface could break the core mathematical logic, and vice versa. If scaled, it should be refactored by splitting the GUI rendering logic, input scanners, and math details into separate packages.
 
 ### 3.4. How can block diagrams and OOP class schemas be extracted from code?
-Using our **`ReverseEngineeringAgent`** AST Scanner:
-- It parses Python source code files into Abstract Syntax Trees using the standard `ast` module.
-- It walks the AST to find `ast.ClassDef` (class definitions), `ast.FunctionDef` (methods and functions), parent classes (inheritance), and object instantiations inside methods (composition).
-- It maps these relationships into fenced `mermaid` code blocks (`classDiagram` and `graph TD`) to render flowcharts and OOP schemas.
+Our **`ReverseEngineeringAgent`** extracts structural schemas via the following process:
+* **AST Scanning:**
+  - The script parses target Python files into Abstract Syntax Trees using Python's standard `ast` module (see [src/main/reverse_engineer/ast_scanner.py](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/src/main/reverse_engineer/ast_scanner.py)).
+  - It walks the tree, locating class definitions (`ast.ClassDef`) and function/method definitions (`ast.FunctionDef`).
+  - It extracts inheritance mapping by reading class base arguments, and composition mapping by identifying class object instantiations inside outside function bodies.
+* **Mermaid Mapping:**
+  - Translates class names, bases, and method definitions into a standardized Mermaid OOP class diagram markup using the `classDiagram` notation (see [src/main/reverse_engineer/mapper.py](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/src/main/reverse_engineer/mapper.py)).
+  - Maps import relationships, functional calls, and module hierarchies into flowcharts using the `graph TD` notation.
+* **Report Compiling:** Outputs the diagrams inside fenced `mermaid` blocks within [reports/reverse_engineer_agent_result.md](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/reverse_engineer_agent_result.md).
 
 ### 3.5. How was the bug identified, and what steps led to its root cause?
-1. The **Research Bugs Agent** loaded the Obsidian vault files and executed a compilation check (`ast.parse`) across the codebase.
-2. The scanner raised `SyntaxError` exceptions at:
-   - `mathsquiz/mathsquiz.py` Line 3 (Missing print parenthesis).
-   - `polygons/polygons.py` Line 29 (Invalid use of `new` keyword).
-3. The root cause was identified as compatibility issues (Python 2 syntax) and syntax habits imported from other language structures.
+The bug was identified and resolved via the following steps:
+* **Syntax Detection:** The **Research Bugs Agent** walked the copied files inside the `obsidian/` folder and ran `ast.parse` compilation checks. It caught syntax errors in:
+  - `mathsquiz/mathsquiz.py` L3: Legacy print statement without parentheses (see [reports/bugs_we_found.md#L53](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/bugs_we_found.md#L53)).
+  - `polygons/polygons.py` L29: Invalid syntax check (see [reports/bugs_we_found.md#L54](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/bugs_we_found.md#L54)).
+* **Root Cause Verification:**
+  - **Polygons L29:** The code used Java/C++ style instantiations: `poly = new Polygon(...)`. Python does not have a `new` keyword, leading to a compilation crash.
+  - **Mathsquiz L3, L4:** Used Python 2 print syntax (`print "..."`), which throws `SyntaxError` in Python 3.
+  - **Mathsquiz L14, L25, L36, etc.:** Single equals signs (`if answer = 55:`) were used for equality checks, attempting variable assignment inside conditional headers, which is syntax-invalid.
+  - **Mathsquiz L91, L93:** Used `else if` instead of Python's `elif` keyword, breaking compilation.
 
 ### 3.6. What is the benefit of graph-guided representation over sequential file scans?
-A sequential scan forces the LLM or agent to read every file in full (naive search), consuming massive prompt tokens as history accumulates. Graph-guided representation allows the agent to inspect the lightweight `graph.json` first, identify high-centrality connector nodes and entry points, and read **only the specific files** within the critical path.
+The comparative token efficiency simulation (Subject 5.5) highlights the benefits:
+* **Explores Prompt Constraints:** A sequential file scan (naive approach) requires the agent to read all files in the repository. This loads massive file contents into the prompt history. As the conversation history accumulates over multiple turns, it inflates prompt input tokens, leading to high API costs and context window decay.
+* **Graph-Guided Benefits:** The agent first reads the pre-compiled `graph.json` topology map, locates the high-centrality connector nodes (`polygons.py`), and target-reads only those files.
+* **Simulated Metrics (see [reports/token_count.md#L25](file:///Users/amirmt/Desktop/ME/Me/MSC-ComputerScience/2025-B/agent%20AI/hw4/reports/token_count.md#L25)):**
+  - **Naive Input Tokens:** 78,255 tokens (5 search iterations).
+  - **Graph-Guided Input Tokens:** 35,334 tokens (2 search iterations).
+  - **Overall Savings:** **54.8% input token savings** and **60.0% fewer search iterations**, demonstrating how pre-compiled metadata prevents multi-turn exploratory searches.
 
 ### 3.7. What improvements can be added to the agent workflows?
-Workflows can be improved by adding:
-- Automatic syntax validation before rewriting code.
-- Interactive user confirmation dialogs via `ask_question` modal UI steps before applying critical file edits.
-- Standardized dependency verification steps using automated checkers.
+To optimize the autonomous workflow (Subject 5.3):
+* **Compile-Time Validation:** Integrate syntax validation checks (`ast.parse` or `compile`) automatically before committing files, preventing buggy code writes.
+* **Automated Refactoring Engine:** Equipping the agent workflow with standard refactoring scripts (like `fixer/engine.py` we built) allows it to auto-resolve compile syntax errors and other common bugs (timeouts, retry limits).
+* **Interactive Modals:** Use user questions (`ask_question` CLI modals) to resolve architectural ambiguities or request permissions before applying high-risk writes.
+* **Automatic Backlink Wiring:** Automate vault folder syncing so that modifying a python source file automatically updates its Obsidian note links, keeping the wiki in sync.
 
 ---
 
