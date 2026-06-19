@@ -12,6 +12,7 @@ tags:
 # mathsquiz-step2.py
 
 ## Connections
+- [[mathsquiz/mathsquiz-step2.py|Source Origin]]
 - [[ask_question()]] - `contains` [EXTRACTED]
 - [[print_final_scores()]] - `contains` [EXTRACTED]
 - [[welcome_message()]] - `contains` [EXTRACTED]

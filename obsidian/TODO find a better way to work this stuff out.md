@@ -12,6 +12,7 @@ tags:
 # # TODO: find a better way to work this stuff out
 
 ## Connections
+- [[polygons/polygons.py|Source Origin]]
 - [[polygons.py]] - `rationale_for` [EXTRACTED]
 
 #graphify/rationale #graphify/EXTRACTED #community/Community_1

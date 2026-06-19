@@ -12,6 +12,7 @@ tags:
 # polygons.py
 
 ## Connections
+- [[polygons/polygons.py|Source Origin]]
 - [[TODO find a better way to work this stuff out]] - `rationale_for` [EXTRACTED]
 - [[TODO make this work for any type of polygon]] - `rationale_for` [EXTRACTED]
 - [[TODO perhaps I should use the class Polygon instead!]] - `rationale_for` [EXTRACTED]

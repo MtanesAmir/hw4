@@ -12,6 +12,7 @@ tags:
 # mathsquiz.py
 
 ## Connections
+- [[mathsquiz/mathsquiz.py|Source Origin]]
 - [[Maths Quiz Project]] - `references` [EXTRACTED]
 - [[mathsquiz-final.py]] - `semantically_similar_to` [INFERRED]
 

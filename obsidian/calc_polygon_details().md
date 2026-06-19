@@ -12,6 +12,7 @@ tags:
 # calc_polygon_details()
 
 ## Connections
+- [[polygons/polygons.py|Source Origin]]
 - [[Polygon]] - `calls` [EXTRACTED]
 - [[polygons.py]] - `contains` [EXTRACTED]
 

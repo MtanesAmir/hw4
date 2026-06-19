@@ -12,6 +12,7 @@ tags:
 # Polygon
 
 ## Connections
+- [[polygons/polygons.py|Source Origin]]
 - [[.__init__()]] - `method` [EXTRACTED]
 - [[Object]] - `inherits` [EXTRACTED]
 - [[calc_polygon_details()]] - `calls` [EXTRACTED]
